@@ -26,12 +26,7 @@
 					<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 				</dcscor:item>
 			</appearance>
-			<presentation xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Не заполнен email</v8:content>
-				</v8:item>
-			</presentation>
+			<presentation xsi:type="xs:string">Не заполнен email</presentation>
 		</item>
 	</conditionalAppearance>
 </Settings>

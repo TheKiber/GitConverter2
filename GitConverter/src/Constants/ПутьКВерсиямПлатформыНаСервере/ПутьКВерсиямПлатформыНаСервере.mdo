@@ -3,13 +3,13 @@
   <producedTypes>
     <managerType typeId="88b3c18a-1227-4655-b434-87f6936e8efe" valueTypeId="a1b1c025-ac10-4d49-804a-b8b1bf8e9c81"/>
     <valueManagerType typeId="355577f8-b8bf-4ec1-a933-dcff8cc33ad5" valueTypeId="41f4a328-cc84-4ac0-8eca-753092123d03"/>
+    <valueKeyType typeId="9a04725a-fc30-5966-a2a5-8911f2312506" valueTypeId="5fe5b0a5-6bca-5625-8a84-6e20962aad9a"/>
   </producedTypes>
   <name>ПутьКВерсиямПлатформыНаСервере</name>
   <synonym>
     <key>ru</key>
     <value>Путь к версиям платформы на сервере</value>
   </synonym>
-  <comment></comment>
   <type>
     <types>String</types>
     <stringQualifiers/>
@@ -24,7 +24,6 @@
 где в параметр %ВерсияПлатформы% - будет подставлена текущая версия хранилища из настроек.
 Параметр %ВерсияПлатформы% можно не указывать, если конвертация выполняется на сервере под управлением ОС Linux и на сервере установлена только 1 версия платформы.</value>
   </toolTip>
-  <mask></mask>
   <minValue xsi:type="core:UndefinedValue"/>
   <maxValue xsi:type="core:UndefinedValue"/>
   <fillChecking>ShowError</fillChecking>
