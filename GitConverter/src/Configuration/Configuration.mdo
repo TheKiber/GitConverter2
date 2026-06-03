@@ -95,11 +95,16 @@
   <scheduledJobs>ScheduledJob.ВыгрузкаВерсииИзКопииХранилища</scheduledJobs>
   <scheduledJobs>ScheduledJob.КонвертацияХранилища</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОбработкаОчереди</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ОчисткаМусора</scheduledJobs>
   <functionalOptions>FunctionalOption.ИспользоватьНесколькоВерсийEDT</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьОчередиВыполнения</functionalOptions>
   <constants>Constant.ИспользоватьНесколькоВерсийEDT</constants>
   <constants>Constant.ИспользоватьОчередиВыполнения</constants>
   <constants>Constant.ПутьКВерсиямПлатформыНаСервере</constants>
+  <constants>Constant.КонвертацияОстановлена</constants>
+  <constants>Constant.МаксимальноеКоличествоИнкрементальныхВерсийПодряд</constants>
+  <constants>Constant.АрхивироватьОшибки</constants>
+  <constants>Constant.КоличествоОшибокДоОстановки</constants>
   <commonForms>CommonForm.Настройки</commonForms>
   <catalogs>Catalog.ВерсииХранилища</catalogs>
   <catalogs>Catalog.КопииХранилищКонфигурации</catalogs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd7426e7-3a81-4f72-b356-5d89c7b76df5">
+  <producedTypes>
+    <managerType typeId="89a0afc8-4488-4a75-ac9e-4af886954eac" valueTypeId="16b8fee2-f368-432a-9b44-4f3c944e31a5"/>
+    <valueManagerType typeId="a9d239a2-ddf9-4008-b006-ba3dc77dfb3a" valueTypeId="bcb5ffe9-80ab-45dc-8358-876984950f48"/>
+    <valueKeyType typeId="e245c774-d055-5b56-9715-cdec149e09ec" valueTypeId="3ec5da6d-65d9-5c06-80e4-8f37bd62de0b"/>
+  </producedTypes>
+  <name>КонвертацияОстановлена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запуск фоновых заданий запрещен</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2a765a7-38f0-4309-ab72-4bd9b2696983">
+  <producedTypes>
+    <managerType typeId="75138e70-3f63-480b-ae31-ae7526c3d9ac" valueTypeId="d081e15d-193e-4a11-9bbb-3e5296f0770e"/>
+    <valueManagerType typeId="3a448d5f-3393-4e7e-8955-94b3005f28a8" valueTypeId="d3c752c3-bb78-4a2a-8a61-6499e2597fc1"/>
+    <valueKeyType typeId="d3e1d097-79ec-4c32-8444-d442677d630e" valueTypeId="186a5c5b-7b9b-4057-afd7-a2b67409a417"/>
+  </producedTypes>
+  <name>АрхивироватьОшибки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Архивировать ошибки</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

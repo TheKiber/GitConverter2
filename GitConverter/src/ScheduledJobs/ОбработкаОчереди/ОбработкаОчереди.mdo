@@ -5,7 +5,7 @@
     <key>ru</key>
     <value>Обработка очереди</value>
   </synonym>
-  <methodName>CommonModule.ОбработкаОчередей.ОбработатьОчередь</methodName>
+  <methodName>CommonModule.КонвертацияХранилища.ОбработатьОчередь</methodName>
   <description>Обработка очереди</description>
   <use>true</use>
   <restartCountOnFailure>3</restartCountOnFailure>

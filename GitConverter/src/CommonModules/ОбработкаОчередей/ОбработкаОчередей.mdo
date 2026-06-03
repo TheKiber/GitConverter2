@@ -3,8 +3,9 @@
   <name>ОбработкаОчередей</name>
   <synonym>
     <key>ru</key>
-    <value>Обработка очередей</value>
+    <value>Не используется (Обработка очередей)</value>
   </synonym>
+  <comment>Следует использовать модуль КонвертацияХранилища.</comment>
   <server>true</server>
   <externalConnection>true</externalConnection>
 </mdclass:CommonModule>

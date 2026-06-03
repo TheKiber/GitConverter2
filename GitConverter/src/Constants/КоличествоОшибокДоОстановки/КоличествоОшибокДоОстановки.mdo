@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86d75dbf-c9e2-446e-8dc5-f3aaefbb752b">
+  <producedTypes>
+    <managerType typeId="aafc08c1-6845-46df-a81e-b863dbaa6685" valueTypeId="db8c864c-5e9b-4861-8b23-067bc91ba362"/>
+    <valueManagerType typeId="e25d3d66-aa4c-4896-be94-ab19d3b16060" valueTypeId="00ecf4aa-ece7-4956-8111-0a583437ee5b"/>
+    <valueKeyType typeId="48ae09f2-028f-4bd0-be7c-acc11c403417" valueTypeId="77d36075-5ac4-4c55-8bf5-6c3c6d1d78fa"/>
+  </producedTypes>
+  <name>КоличествоОшибокДоОстановки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество ошибок до остановки</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

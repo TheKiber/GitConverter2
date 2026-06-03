@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9491ff3d-d497-4446-9cd0-29127e56787b">
+  <producedTypes>
+    <managerType typeId="93e8b2fc-72f1-4d54-ac5e-8304490ff6a3" valueTypeId="47950b9f-56f9-40df-9664-d7ca7a513783"/>
+    <valueManagerType typeId="9dab69f0-9064-499d-a2a0-5d2b90a9b259" valueTypeId="0532e029-10e9-4f91-a073-4be77024edb2"/>
+    <valueKeyType typeId="67f17c29-7d51-543e-9471-50c6dd05ec7f" valueTypeId="2ce84c61-7c96-5381-99bd-8c82f034750c"/>
+  </producedTypes>
+  <name>МаксимальноеКоличествоИнкрементальныхВерсийПодряд</name>
+  <synonym>
+    <key>ru</key>
+    <value>Максимальное количество инкрементальных версий подряд</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
