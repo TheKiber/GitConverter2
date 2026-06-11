@@ -197,7 +197,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВерсияПлатформы</name>
+      <name>ВерсияПлатформыХранилища</name>
       <id>19</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -208,7 +208,7 @@
         <segments>Список.ВерсияПлатформыВыгрузки</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВерсияПлатформыРасширеннаяПодсказка1</name>
+        <name>ВерсияПлатформыХранилищаРасширеннаяПодсказка</name>
         <id>21</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -218,7 +218,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВерсияПлатформыКонтекстноеМеню1</name>
+        <name>ВерсияПлатформыХранилищаКонтекстноеМеню</name>
         <id>20</id>
         <autoFill>true</autoFill>
       </contextMenu>

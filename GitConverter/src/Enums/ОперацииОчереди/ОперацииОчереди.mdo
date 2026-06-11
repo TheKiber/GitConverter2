@@ -13,17 +13,17 @@
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
   <enumValues uuid="8befc881-4ecc-4457-a9d9-d7be1af0abc3">
-    <name>ВыгрузкаКонфигурации</name>
+    <name>ВыгрузкаВXML</name>
     <synonym>
       <key>ru</key>
-      <value>Выгрузка конфигурации</value>
+      <value>Выгрузка в XML</value>
     </synonym>
   </enumValues>
   <enumValues uuid="438caa08-679d-4d17-900e-20972ad0a860">
-    <name>ЗагрузкаМетаданных</name>
+    <name>ЗагрузкаВEDT</name>
     <synonym>
       <key>ru</key>
-      <value>Загрузка метаданных</value>
+      <value>Загрузка в EDT</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

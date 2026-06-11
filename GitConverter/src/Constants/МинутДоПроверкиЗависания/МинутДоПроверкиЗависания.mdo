@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7fb8ea2b-1180-4b53-a7e5-af6ab1d5eff6">
+  <producedTypes>
+    <managerType typeId="2c4fe7fe-08e5-43fd-bf55-7fde242117f0" valueTypeId="91207bd3-7058-4021-9e8a-415d561962d2"/>
+    <valueManagerType typeId="11578c5f-afde-4df5-86a7-1191d086f95f" valueTypeId="e1e5774e-ea5e-429e-bebc-b6c2127ecc31"/>
+    <valueKeyType typeId="ff710804-6ed1-44df-be9c-123e36548762" valueTypeId="aa3511e8-1c24-4a4b-8d43-b8d22a908215"/>
+  </producedTypes>
+  <name>МинутДоПроверкиЗависания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минут ожидания до проверки зависания</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>4</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>По умолчанию - 30 минут</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82e438b5-0bd3-4dba-a974-d78ff94c11a4">
+  <producedTypes>
+    <managerType typeId="5a46d0a5-1de4-4131-beca-18deac9dbc11" valueTypeId="5fec4554-3d45-4156-8860-ccdf0898e29a"/>
+    <valueManagerType typeId="30428993-e683-48e9-857f-f9877f77d069" valueTypeId="f261ae7d-6bab-410b-bdf1-9de9e0a24b33"/>
+    <valueKeyType typeId="657628c3-0676-51aa-a140-b4fa5266d542" valueTypeId="f512dbf1-6b7b-53be-880b-9e696b2df793"/>
+  </producedTypes>
+  <name>МинутДоПринудительнойОстановки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минут ожидания до принудительной остановки</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>4</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>По умолчанию - 180 минут (3 часа)</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

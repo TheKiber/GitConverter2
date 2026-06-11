@@ -14,6 +14,10 @@
     <types>Boolean</types>
   </type>
   <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>При возникновении ошибок для каждой версии будет архивироваться первые 3 ошибки для последующего расследования</value>
+  </toolTip>
   <minValue xsi:type="core:UndefinedValue"/>
   <maxValue xsi:type="core:UndefinedValue"/>
   <dataLockControlMode>Managed</dataLockControlMode>

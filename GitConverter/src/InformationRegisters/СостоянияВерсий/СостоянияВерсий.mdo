@@ -9,10 +9,10 @@
     <recordType typeId="6ba806ea-93cd-4afd-b1a2-9ed3c02289fb" valueTypeId="2cd0a3ed-3423-4662-ba46-cb36de086eba"/>
     <recordManagerType typeId="1628505f-bacf-4e19-8abd-cd0481a6c6aa" valueTypeId="0d0b0963-60b4-4a8f-a4ee-9285aec1bcf9"/>
   </producedTypes>
-  <name>СостоянияВерсии</name>
+  <name>СостоянияВерсий</name>
   <synonym>
     <key>ru</key>
-    <value>Состояния версии</value>
+    <value>Состояния версий</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <standardAttributes>
@@ -62,6 +62,40 @@
     </synonym>
     <type>
       <types>EnumRef.СостоянияВерсии</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ad2e4a33-bff9-4cda-9a67-8d656bf80ddc">
+    <name>НомерСеанса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер сеанса</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>11</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="df5f9526-b2cb-4945-9cc2-dc3312941f24">
+    <name>НачалоСеанса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало сеанса</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

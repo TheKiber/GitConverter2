@@ -471,7 +471,7 @@
         <name>СписокКонтекстноеМеню</name>
         <id>4</id>
         <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюУстановитьСостояниеВерсияПолучена</name>
+          <name>СписокКонтекстноеМенюУстановитьСостояниеПолученCF</name>
           <id>83</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -479,7 +479,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокКонтекстноеМенюУстановитьСостояниеВерсияПолученаРасширеннаяПодсказка</name>
+            <name>СписокКонтекстноеМенюУстановитьСостояниеПолученCFРасширеннаяПодсказка</name>
             <id>84</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
@@ -488,14 +488,14 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьСостояниеВерсияПолучена</commandName>
+          <commandName>Form.Command.УстановитьСостояниеПолученCF</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
         </items>
         <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюУстановитьСостояниеВерсияВыгружена</name>
+          <name>СписокКонтекстноеМенюУстановитьСостояниеВыгруженаВXML</name>
           <id>85</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -503,7 +503,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокКонтекстноеМенюУстановитьСостояниеВерсияВыгруженаРасширеннаяПодсказка</name>
+            <name>СписокКонтекстноеМенюУстановитьСостояниеВыгруженаВXMLРасширеннаяПодсказка</name>
             <id>86</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
@@ -512,14 +512,14 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьСостояниеВерсияВыгружена</commandName>
+          <commandName>Form.Command.УстановитьСостояниеВыгруженаВXML</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
         </items>
         <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюУстановитьСостояниеМетаданныеЗагружены</name>
+          <name>СписокКонтекстноеМенюУстановитьСостояниеЗагруженаВEDT</name>
           <id>81</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -527,7 +527,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокКонтекстноеМенюУстановитьСостояниеМетаданныеЗагруженыРасширеннаяПодсказка</name>
+            <name>СписокКонтекстноеМенюУстановитьСостояниеЗагруженаВEDTРасширеннаяПодсказка</name>
             <id>82</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
@@ -536,14 +536,14 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьСостояниеМетаданныеЗагружены</commandName>
+          <commandName>Form.Command.УстановитьСостояниеЗагруженаВEDT</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
         </items>
         <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюУстановитьСостояниеВерсияПомещена</name>
+          <name>СписокКонтекстноеМенюУстановитьСостояниеПомещенаВGit</name>
           <id>89</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -551,7 +551,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокКонтекстноеМенюУстановитьСостояниеВерсияПомещенаРасширеннаяПодсказка</name>
+            <name>СписокКонтекстноеМенюУстановитьСостояниеПомещенаВGitРасширеннаяПодсказка</name>
             <id>90</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
@@ -560,7 +560,7 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.УстановитьСостояниеВерсияПомещена</commandName>
+          <commandName>Form.Command.УстановитьСостояниеПомещенаВGit</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1074,7 +1074,7 @@
     </extInfo>
   </attributes>
   <formCommands>
-    <name>УстановитьСостояниеВерсияВыгружена</name>
+    <name>УстановитьСостояниеВыгруженаВXML</name>
     <title>
       <key>ru</key>
       <value>Установить состояние &quot;Версия выгружена&quot;</value>
@@ -1089,13 +1089,13 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>УстановитьСостояниеВерсияВыгружена</name>
+        <name>УстановитьСостояниеВыгруженаВXML</name>
       </handler>
     </action>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>УстановитьСостояниеВерсияПолучена</name>
+    <name>УстановитьСостояниеПолученCF</name>
     <title>
       <key>ru</key>
       <value>Установить состояние &quot;Версия получена&quot;</value>
@@ -1110,13 +1110,13 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>УстановитьСостояниеВерсияПолучена</name>
+        <name>УстановитьСостояниеПолученCF</name>
       </handler>
     </action>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>УстановитьСостояниеМетаданныеЗагружены</name>
+    <name>УстановитьСостояниеЗагруженаВEDT</name>
     <title>
       <key>ru</key>
       <value>Установить состояние &quot;Метаданные загружены&quot;</value>
@@ -1131,7 +1131,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>УстановитьСостояниеМетаданныеЗагружены</name>
+        <name>УстановитьСостояниеЗагруженаВEDT</name>
       </handler>
     </action>
     <currentRowUse>DontUse</currentRowUse>
@@ -1158,7 +1158,7 @@
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>УстановитьСостояниеВерсияПомещена</name>
+    <name>УстановитьСостояниеПомещенаВGit</name>
     <title>
       <key>ru</key>
       <value>Установить состояние &quot;Версия помещена&quot;</value>
@@ -1169,7 +1169,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>УстановитьСостояниеВерсияПомещена</name>
+        <name>УстановитьСостояниеПомещенаВGit</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

@@ -29,59 +29,59 @@
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
   <enumValues uuid="ef07016e-d82e-4353-aac9-29ff2d154177">
-    <name>ПолучениеВерсии</name>
+    <name>ПолучаетсяCF</name>
     <synonym>
       <key>ru</key>
-      <value>Получение версии</value>
+      <value>Получается CF</value>
     </synonym>
   </enumValues>
   <enumValues uuid="af1af028-0532-44d5-b780-8a928df1567f">
-    <name>ВерсияПолучена</name>
+    <name>ПолученCF</name>
     <synonym>
       <key>ru</key>
-      <value>Версия получена</value>
+      <value>CF получен</value>
     </synonym>
   </enumValues>
   <enumValues uuid="51e3cb41-c999-4236-a107-91727c63046a">
-    <name>ВыгрузкаВерсии</name>
+    <name>ВыгружаетсяВXML</name>
     <synonym>
       <key>ru</key>
-      <value>Выгрузка версии</value>
+      <value>Выгружается в XML</value>
     </synonym>
   </enumValues>
   <enumValues uuid="7a208bd2-3114-4381-a0d7-c68f8651e314">
-    <name>ВерсияВыгружена</name>
+    <name>ВыгруженаВXML</name>
     <synonym>
       <key>ru</key>
-      <value>Версия выгружена</value>
+      <value>Выгружена в XML</value>
     </synonym>
   </enumValues>
   <enumValues uuid="96d75451-9431-440b-80a6-b103e0a2227e">
-    <name>ЗагрузкаМетаданных</name>
+    <name>ЗагружаетсяВEDT</name>
     <synonym>
       <key>ru</key>
-      <value>Загрузка метаданных</value>
+      <value>Загружается в EDT</value>
     </synonym>
   </enumValues>
   <enumValues uuid="bc0bb8e0-d029-4e80-be57-c78c69e1c3a0">
-    <name>МетаданныеЗагружены</name>
+    <name>ЗагруженаВEDT</name>
     <synonym>
       <key>ru</key>
-      <value>Метаданные загружены</value>
+      <value>Загружена в EDT</value>
     </synonym>
   </enumValues>
   <enumValues uuid="c4bd971a-8a2a-4094-a99f-4eec0e4087f7">
-    <name>НачалоКоммита</name>
+    <name>ПомещаетсяВGit</name>
     <synonym>
       <key>ru</key>
-      <value>Начало коммита</value>
+      <value>Помещается в Git</value>
     </synonym>
   </enumValues>
   <enumValues uuid="bed08d91-4a0d-410e-9d36-ba3ca3b89658">
-    <name>ВерсияПомещена</name>
+    <name>ПомещенаВGit</name>
     <synonym>
       <key>ru</key>
-      <value>Версия помещена</value>
+      <value>Помещена в Git</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

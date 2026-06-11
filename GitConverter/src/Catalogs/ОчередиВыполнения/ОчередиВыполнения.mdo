@@ -149,7 +149,7 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.ОперацииОчереди.EnumValue.ВыгрузкаКонфигурации</value>
+      <value>Enum.ОперацииОчереди.EnumValue.ВыгрузкаВXML</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

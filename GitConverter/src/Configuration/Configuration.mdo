@@ -82,29 +82,33 @@
   <commonModules>CommonModule.КонвертацияХранилища</commonModules>
   <commonModules>CommonModule.ОбработкаОчередей</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияВызовСервера</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияГлобальный</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияКлиент</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияКлиентСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияПовтИсп</commonModules>
+  <commonModules>CommonModule.ПроцессыСервера</commonModules>
   <commonModules>CommonModule.РаботаВБезопасномРежиме</commonModules>
   <commonModules>CommonModule.РегламентныеЗаданияСервер</commonModules>
   <commonModules>CommonModule.РегламентныеЗаданияСлужебный</commonModules>
   <commonModules>CommonModule.СтандартныеПодсистемыСервер</commonModules>
+  <commonModules>CommonModule.СтроковыеФункции</commonModules>
   <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
-  <commonModules>CommonModule.ОбщегоНазначенияВызовСервера</commonModules>
   <scheduledJobs>ScheduledJob.ВыгрузкаВерсииИзКопииХранилища</scheduledJobs>
   <scheduledJobs>ScheduledJob.КонвертацияХранилища</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОбработкаОчереди</scheduledJobs>
-  <scheduledJobs>ScheduledJob.ОчисткаМусора</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ОчисткаОтМусора</scheduledJobs>
   <functionalOptions>FunctionalOption.ИспользоватьНесколькоВерсийEDT</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьОчередиВыполнения</functionalOptions>
+  <constants>Constant.АрхивироватьОшибки</constants>
   <constants>Constant.ИспользоватьНесколькоВерсийEDT</constants>
   <constants>Constant.ИспользоватьОчередиВыполнения</constants>
-  <constants>Constant.ПутьКВерсиямПлатформыНаСервере</constants>
   <constants>Constant.КонвертацияОстановлена</constants>
   <constants>Constant.МаксимальноеКоличествоИнкрементальныхВерсийПодряд</constants>
-  <constants>Constant.АрхивироватьОшибки</constants>
-  <constants>Constant.КоличествоОшибокДоОстановки</constants>
+  <constants>Constant.МаксимальноеКоличествоОшибокВерсии</constants>
+  <constants>Constant.МинутДоПринудительнойОстановки</constants>
+  <constants>Constant.МинутДоПроверкиЗависания</constants>
+  <constants>Constant.ПутьКВерсиямПлатформыНаСервере</constants>
   <commonForms>CommonForm.Настройки</commonForms>
   <catalogs>Catalog.ВерсииХранилища</catalogs>
   <catalogs>Catalog.КопииХранилищКонфигурации</catalogs>
@@ -118,5 +122,5 @@
   <dataProcessors>DataProcessor.РегламентныеИФоновыеЗадания</dataProcessors>
   <dataProcessors>DataProcessor.КонвертацияВФорматEDT</dataProcessors>
   <informationRegisters>InformationRegister.ИнформацияПользователей</informationRegisters>
-  <informationRegisters>InformationRegister.СостоянияВерсии</informationRegisters>
+  <informationRegisters>InformationRegister.СостоянияВерсий</informationRegisters>
 </mdclass:Configuration>
