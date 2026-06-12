@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef947fb6-c732-4467-925a-544c49d0876a">
+  <producedTypes>
+    <managerType typeId="106b9748-7f5e-4fcd-8ecf-dc5b52231eba" valueTypeId="49e65353-4c44-464b-85cf-a9fb0037982f"/>
+    <valueManagerType typeId="7767770c-0685-4ee0-a1ab-2b9902695350" valueTypeId="aa167757-546f-4185-afe0-c18c9e91e4ba"/>
+    <valueKeyType typeId="0622621e-3525-5681-ac40-be11738bbf7a" valueTypeId="39e56736-e8f9-5b4c-9a02-07652f4ee8dc"/>
+  </producedTypes>
+  <name>ДобавлятьВременныеБазыВСписок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавлять временные базы в список</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

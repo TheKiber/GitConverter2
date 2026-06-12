@@ -80,7 +80,6 @@
   <commonModules>CommonModule.ДлительныеОперации</commonModules>
   <commonModules>CommonModule.ДлительныеОперацииКлиент</commonModules>
   <commonModules>CommonModule.КонвертацияХранилища</commonModules>
-  <commonModules>CommonModule.ОбработкаОчередей</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияВызовСервера</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияГлобальный</commonModules>
@@ -98,9 +97,11 @@
   <scheduledJobs>ScheduledJob.КонвертацияХранилища</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОбработкаОчереди</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОчисткаОтМусора</scheduledJobs>
+  <functionalOptions>FunctionalOption.ДобавлятьВременныеБазыВСписок</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьНесколькоВерсийEDT</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьОчередиВыполнения</functionalOptions>
   <constants>Constant.АрхивироватьОшибки</constants>
+  <constants>Constant.ДобавлятьВременныеБазыВСписок</constants>
   <constants>Constant.ИспользоватьНесколькоВерсийEDT</constants>
   <constants>Constant.ИспользоватьОчередиВыполнения</constants>
   <constants>Constant.КонвертацияОстановлена</constants>

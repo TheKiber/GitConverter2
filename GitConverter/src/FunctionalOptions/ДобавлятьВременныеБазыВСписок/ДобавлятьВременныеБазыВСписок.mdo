@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80486484-e280-468c-a630-e7f6819b0486">
+  <name>ДобавлятьВременныеБазыВСписок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавлять временные базы в список</value>
+  </synonym>
+  <location>Constant.ДобавлятьВременныеБазыВСписок</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>
