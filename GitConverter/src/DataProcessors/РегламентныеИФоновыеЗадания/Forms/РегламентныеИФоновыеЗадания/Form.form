@@ -1121,7 +1121,6 @@
           </extendedTooltip>
           <type>UsualGroup</type>
           <extInfo xsi:type="form:UsualGroupExtInfo">
-            <behavior>Auto</behavior>
             <showLeftMargin>true</showLeftMargin>
             <united>true</united>
             <throughAlign>Auto</throughAlign>
@@ -1359,7 +1358,6 @@
             </extendedTooltip>
             <type>UsualGroup</type>
             <extInfo xsi:type="form:UsualGroupExtInfo">
-              <behavior>Auto</behavior>
               <showLeftMargin>true</showLeftMargin>
               <united>true</united>
               <throughAlign>Auto</throughAlign>
@@ -1387,7 +1385,6 @@
           </extendedTooltip>
           <type>UsualGroup</type>
           <extInfo xsi:type="form:UsualGroupExtInfo">
-            <behavior>Auto</behavior>
             <showLeftMargin>true</showLeftMargin>
             <united>true</united>
             <throughAlign>Auto</throughAlign>
@@ -1510,7 +1507,6 @@
           </extendedTooltip>
           <type>UsualGroup</type>
           <extInfo xsi:type="form:UsualGroupExtInfo">
-            <behavior>Auto</behavior>
             <showLeftMargin>true</showLeftMargin>
             <united>true</united>
             <throughAlign>Auto</throughAlign>
@@ -1535,7 +1531,6 @@
         <type>UsualGroup</type>
         <extInfo xsi:type="form:UsualGroupExtInfo">
           <group>Vertical</group>
-          <behavior>Auto</behavior>
           <showLeftMargin>true</showLeftMargin>
           <united>true</united>
           <throughAlign>Auto</throughAlign>
@@ -3286,7 +3281,7 @@
   <commandInterface>
     <navigationPanel>
       <cmiFragmentRecord>
-        <command>0:f7ccc574-d6c3-495a-86b4-7e24e75502d9</command>
+        <command>0</command>
         <group>FormNavigationPanelImportant</group>
         <index>2</index>
         <userVisible>
@@ -3294,7 +3289,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>0:49440928-bbd6-4c6a-bf40-af70a34d7372</command>
+        <command>0</command>
         <group>FormNavigationPanelImportant</group>
         <index>0</index>
         <userVisible>
@@ -3302,7 +3297,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>0:721481be-40e4-45b6-9530-ad7fb0c60429</command>
+        <command>0</command>
         <group>FormNavigationPanelImportant</group>
         <index>1</index>
         <userVisible>
@@ -3310,7 +3305,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>0:f7ccc574-d6c3-495a-86b4-7e24e75502d9</command>
+        <command>0</command>
         <type>Added</type>
         <group>FormNavigationPanelGoTo</group>
         <index>1</index>
@@ -3319,7 +3314,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>0:49440928-bbd6-4c6a-bf40-af70a34d7372</command>
+        <command>0</command>
         <type>Added</type>
         <group>FormNavigationPanelImportant</group>
         <index>0</index>
@@ -3328,7 +3323,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>0:721481be-40e4-45b6-9530-ad7fb0c60429</command>
+        <command>0</command>
         <type>Added</type>
         <group>FormNavigationPanelGoTo</group>
         <index>0</index>

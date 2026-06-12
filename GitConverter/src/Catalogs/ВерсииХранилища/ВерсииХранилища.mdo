@@ -294,7 +294,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Из базы версии выгружены только изменения по сравнению с предыдущей версией. Доступно начиная с платформы 8.3.10.</value>
+      <value>Из базы версии выгружены только изменения по сравнению с предыдущей версией.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
