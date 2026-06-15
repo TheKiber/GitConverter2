@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
   <items xsi:type="form:FormGroup">
     <name>СписокКомпоновщикНастроекПользовательскиеНастройки</name>
     <id>1</id>
@@ -47,7 +47,7 @@
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
-      <name>КонвертироватьПоРасписанию</name>
+      <name>ИспользованиеЗадания</name>
       <id>35</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -55,11 +55,11 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.КонвертироватьПоРасписанию</segments>
+        <segments>Список.ИспользованиеЗадания</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>
-        <name>КонвертироватьПоРасписаниюРасширеннаяПодсказка</name>
+        <name>ИспользованиеЗаданияРасширеннаяПодсказка</name>
         <id>37</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -69,7 +69,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>КонвертироватьПоРасписаниюКонтекстноеМеню</name>
+        <name>ИспользованиеЗаданияКонтекстноеМеню</name>
         <id>36</id>
         <autoFill>true</autoFill>
       </contextMenu>
@@ -129,7 +129,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.Description</segments>
+        <segments>Список.Наименование</segments>
       </dataPath>
       <extendedTooltip>
         <name>НаименованиеРасширеннаяПодсказка</name>
@@ -305,13 +305,49 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>ПредставлениеРасписания</name>
+      <id>41</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ПредставлениеРасписания</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ПредставлениеРасписанияРасширеннаяПодсказка</name>
+        <id>43</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПредставлениеРасписанияКонтекстноеМеню</name>
+        <id>42</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>Ссылка</name>
       <id>29</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible/>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.Ref</segments>
+        <segments>Список.Ссылка</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаРасширеннаяПодсказка</name>
@@ -497,58 +533,253 @@
       <common>true</common>
     </edit>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>Список.Ref</segments>
-    </notDefaultUseAlwaysAttributes>
-    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>Список.КонвертироватьПоРасписанию</segments>
     </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>Список.РегламентноеЗадание</segments>
     </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Список.Ссылка</segments>
+    </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
-      <queryText>ВЫБРАТЬ 
-       ХранилищаКонфигураций.Ссылка, 
-       ХранилищаКонфигураций.ПометкаУдаления, 
-       ХранилищаКонфигураций.Наименование, 
-       ХранилищаКонфигураций.Адрес, 
-       ХранилищаКонфигураций.ВерсияПлатформыВыгрузки, 
-       ХранилищаКонфигураций.РегламентноеЗадание, 
-       ХранилищаКонфигураций.КаталогВыгрузкиВерсий, 
-       ХранилищаКонфигураций.ИмяПользователяХранилища, 
-       ХранилищаКонфигураций.ПарольПользователяХранилища, 
-       ХранилищаКонфигураций.ВерсияВGit, 
-       ХранилищаКонфигураций.ЛокальныйКаталогGit, 
-       ХранилищаКонфигураций.УдалятьВременныеДанныеВерсииПослеКоммита, 
-       ХранилищаКонфигураций.ПерваяВерсия, 
-       ХранилищаКонфигураций.ПоследняяВерсия, 
-       ХранилищаКонфигураций.АдресРепозиторияGit, 
-       ХранилищаКонфигураций.ПользовательСервераGit, 
-       ХранилищаКонфигураций.ПарольСервераGit, 
-       ХранилищаКонфигураций.ВыполнятьКоммиты, 
-       ХранилищаКонфигураций.МаксимальноеКоличествоПодготавливаемыхВерсий, 
-       ХранилищаКонфигураций.ИмяВетки, 
-       ХранилищаКонфигураций.МинимальноеКоличествоМетаданных, 
-       ХранилищаКонфигураций.ОбрабатыватьВсеОчереди, 
-       ХранилищаКонфигураций.ЗапретитьИспользованиеОбщихОчередей, 
-       ХранилищаКонфигураций.КоличествоКоммитов, 
-       ХранилищаКонфигураций.РазрешитьПомещатьАнонимноЕслиНеНайденПользователь, 
-       ХранилищаКонфигураций.ИмяПроектаEDT, 
-       ХранилищаКонфигураций.УдалятьКонфигурацииПоставщиков, 
-       ХранилищаКонфигураций.ВыгружатьИзменения, 
-       ХранилищаКонфигураций.Описание, 
-       ХранилищаКонфигураций.КонвертироватьВФорматEDT, 
-	   ЛОЖЬ КАК КонвертироватьПоРасписанию
- ИЗ 
-       Справочник.ХранилищаКонфигураций
- КАК 
-       ХранилищаКонфигураций</queryText>
+      <queryText>ВЫБРАТЬ
+	ХранилищаКонфигураций.Ссылка КАК Ссылка,
+	ХранилищаКонфигураций.ПометкаУдаления КАК ПометкаУдаления,
+	ХранилищаКонфигураций.Наименование КАК Наименование,
+	ХранилищаКонфигураций.Адрес КАК Адрес,
+	ХранилищаКонфигураций.ВерсияПлатформыВыгрузки КАК ВерсияПлатформыВыгрузки,
+	ХранилищаКонфигураций.ИдентификаторЗадания КАК ИдентификаторЗадания,
+	ХранилищаКонфигураций.КаталогВыгрузкиВерсий КАК КаталогВыгрузкиВерсий,
+	ХранилищаКонфигураций.ИмяПользователяХранилища КАК ИмяПользователяХранилища,
+	ХранилищаКонфигураций.ПарольПользователяХранилища КАК ПарольПользователяХранилища,
+	ХранилищаКонфигураций.ВерсияВGit КАК ВерсияВGit,
+	ХранилищаКонфигураций.ЛокальныйКаталогGit КАК ЛокальныйКаталогGit,
+	ХранилищаКонфигураций.УдалятьВременныеДанныеВерсииПослеКоммита КАК УдалятьВременныеДанныеВерсииПослеКоммита,
+	ХранилищаКонфигураций.ПерваяВерсия КАК ПерваяВерсия,
+	ХранилищаКонфигураций.ПоследняяВерсия КАК ПоследняяВерсия,
+	ХранилищаКонфигураций.АдресРепозиторияGit КАК АдресРепозиторияGit,
+	ХранилищаКонфигураций.ПользовательСервераGit КАК ПользовательСервераGit,
+	ХранилищаКонфигураций.ПарольСервераGit КАК ПарольСервераGit,
+	ХранилищаКонфигураций.ВыполнятьКоммиты КАК ВыполнятьКоммиты,
+	ХранилищаКонфигураций.МаксимальноеКоличествоПодготавливаемыхВерсий КАК МаксимальноеКоличествоПодготавливаемыхВерсий,
+	ХранилищаКонфигураций.ИмяВетки КАК ИмяВетки,
+	ХранилищаКонфигураций.МинимальноеКоличествоМетаданных КАК МинимальноеКоличествоМетаданных,
+	ХранилищаКонфигураций.ОбрабатыватьВсеОчереди КАК ОбрабатыватьВсеОчереди,
+	ХранилищаКонфигураций.ЗапретитьИспользованиеОбщихОчередей КАК ЗапретитьИспользованиеОбщихОчередей,
+	ХранилищаКонфигураций.КоличествоКоммитов КАК КоличествоКоммитов,
+	ХранилищаКонфигураций.РазрешитьПомещатьАнонимноЕслиНеНайденПользователь КАК РазрешитьПомещатьАнонимноЕслиНеНайденПользователь,
+	ХранилищаКонфигураций.ИмяПроектаEDT КАК ИмяПроектаEDT,
+	ХранилищаКонфигураций.УдалятьКонфигурацииПоставщиков КАК УдалятьКонфигурацииПоставщиков,
+	ХранилищаКонфигураций.ВыгружатьИзменения КАК ВыгружатьИзменения,
+	ХранилищаКонфигураций.Описание КАК Описание,
+	ХранилищаКонфигураций.КонвертироватьВФорматEDT КАК КонвертироватьВФорматEDT,
+	ХранилищаКонфигураций.ИспользованиеЗадания КАК ИспользованиеЗадания,
+	ХранилищаКонфигураций.ПредставлениеРасписания КАК ПредставлениеРасписания
+ИЗ
+	Справочник.ХранилищаКонфигураций КАК ХранилищаКонфигураций</queryText>
       <mainTable>Catalog.ХранилищаКонфигураций</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОтключитьЛогирование</dataPath>
+        <field>ОтключитьЛогирование</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияПроектаEDT</dataPath>
+        <field>ВерсияПроектаEDT</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияПлатформыХранилища</dataPath>
+        <field>ВерсияПлатформыХранилища</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользуетсяCLI</dataPath>
+        <field>ИспользуетсяCLI</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДобавлятьМеткиСВерсиейКонфигурации</dataPath>
+        <field>ДобавлятьМеткиСВерсиейКонфигурации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>БазовыйПроект</dataPath>
+        <field>БазовыйПроект</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияEDT</dataPath>
+        <field>ВерсияEDT</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТипХранилища</dataPath>
+        <field>ТипХранилища</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяРасширения</dataPath>
+        <field>ИмяРасширения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыполнятьКоммиты</dataPath>
+        <field>ВыполнятьКоммиты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПерваяВерсия</dataPath>
+        <field>ПерваяВерсия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияEDTCLI</dataPath>
+        <field>ВерсияEDTCLI</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяВетки</dataPath>
+        <field>ИмяВетки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПользовательСервераGit</dataPath>
+        <field>ПользовательСервераGit</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КаталогДляАрхивацииОшибок</dataPath>
+        <field>КаталогДляАрхивацииОшибок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОтправлятьКоммитыВРепозиторийGit</dataPath>
+        <field>ОтправлятьКоммитыВРепозиторийGit</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВозниклаОшибка</dataPath>
+        <field>ВозниклаОшибка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаксимальноеКоличествоПодготавливаемыхВерсий</dataPath>
+        <field>МаксимальноеКоличествоПодготавливаемыхВерсий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПользователяХранилища</dataPath>
+        <field>ИмяПользователяХранилища</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоОшибок</dataPath>
+        <field>КоличествоОшибок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КаталогВыгрузкиВерсий</dataPath>
+        <field>КаталогВыгрузкиВерсий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТекстОшибки</dataPath>
+        <field>ТекстОшибки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияВGit</dataPath>
+        <field>ВерсияВGit</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользованиеЗадания</dataPath>
+        <field>ИспользованиеЗадания</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПоследняяВерсия</dataPath>
+        <field>ПоследняяВерсия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Наименование</dataPath>
+        <field>Наименование</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПредставлениеРасписания</dataPath>
+        <field>ПредставлениеРасписания</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдалятьКонфигурацииПоставщиков</dataPath>
+        <field>УдалятьКонфигурацииПоставщиков</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Адрес</dataPath>
+        <field>Адрес</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияПлатформыВыгрузки</dataPath>
+        <field>ВерсияПлатформыВыгрузки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИдентификаторЗадания</dataPath>
+        <field>ИдентификаторЗадания</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПроектаEDT</dataPath>
+        <field>ИмяПроектаEDT</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РазрешитьПомещатьАнонимноЕслиНеНайденПользователь</dataPath>
+        <field>РазрешитьПомещатьАнонимноЕслиНеНайденПользователь</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АдресРепозиторияGit</dataPath>
+        <field>АдресРепозиторияGit</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПарольПользователяХранилища</dataPath>
+        <field>ПарольПользователяХранилища</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЛокальныйКаталогGit</dataPath>
+        <field>ЛокальныйКаталогGit</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдалятьВременныеДанныеВерсииПослеКоммита</dataPath>
+        <field>УдалятьВременныеДанныеВерсииПослеКоммита</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПарольСервераGit</dataPath>
+        <field>ПарольСервераGit</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МинимальноеКоличествоМетаданных</dataPath>
+        <field>МинимальноеКоличествоМетаданных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбрабатыватьВсеОчереди</dataPath>
+        <field>ОбрабатыватьВсеОчереди</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗапретитьИспользованиеОбщихОчередей</dataPath>
+        <field>ЗапретитьИспользованиеОбщихОчередей</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоКоммитов</dataPath>
+        <field>КоличествоКоммитов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыгружатьИзменения</dataPath>
+        <field>ВыгружатьИзменения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Описание</dataPath>
+        <field>Описание</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КонвертироватьВФорматEDT</dataPath>
+        <field>КонвертироватьВФорматEDT</field>
+      </fields>
     </extInfo>
   </attributes>
   <commandInterface>

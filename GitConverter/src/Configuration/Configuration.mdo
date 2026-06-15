@@ -20,7 +20,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</defaultRoles>
   <vendor>Фирма &quot;1С&quot;</vendor>
-  <version>1.0.9.1</version>
+  <version>2.0.1.1</version>
   <updateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</updateCatalogAddress>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
@@ -72,8 +72,11 @@
     <languageCode>ru</languageCode>
   </languages>
   <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
+  <styleItems>StyleItem.ПоясняющийОшибкуТекст</styleItems>
+  <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <commonPictures>CommonPicture.ВыполнитьРегламентноеЗаданиеВручную</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация48</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.АдминистраторСистемы</roles>
   <roles>Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</roles>
@@ -99,17 +102,16 @@
   <scheduledJobs>ScheduledJob.ОчисткаОтМусора</scheduledJobs>
   <functionalOptions>FunctionalOption.ДобавлятьВременныеБазыВСписок</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьНесколькоВерсийEDT</functionalOptions>
-  <functionalOptions>FunctionalOption.ИспользоватьОчередиВыполнения</functionalOptions>
   <constants>Constant.АрхивироватьОшибки</constants>
   <constants>Constant.ДобавлятьВременныеБазыВСписок</constants>
   <constants>Constant.ИспользоватьНесколькоВерсийEDT</constants>
-  <constants>Constant.ИспользоватьОчередиВыполнения</constants>
   <constants>Constant.КонвертацияОстановлена</constants>
   <constants>Constant.МаксимальноеКоличествоИнкрементальныхВерсийПодряд</constants>
   <constants>Constant.МаксимальноеКоличествоОшибокВерсии</constants>
   <constants>Constant.МинутДоПринудительнойОстановки</constants>
   <constants>Constant.МинутДоПроверкиЗависания</constants>
   <constants>Constant.ПутьКВерсиямПлатформыНаСервере</constants>
+  <constants>Constant.ВерсияДанныхИБ</constants>
   <commonForms>CommonForm.Настройки</commonForms>
   <catalogs>Catalog.ВерсииХранилища</catalogs>
   <catalogs>Catalog.КопииХранилищКонфигурации</catalogs>

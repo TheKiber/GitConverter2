@@ -180,10 +180,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="b2b6ca28-32ca-45e8-8e5a-9974c699724c">
-    <name>РегламентноеЗадание</name>
+    <name>ИдентификаторЗадания</name>
     <synonym>
       <key>ru</key>
-      <value>Регламентное задание</value>
+      <value>Идентификатор задания</value>
     </synonym>
     <type>
       <types>UUID</types>
@@ -940,6 +940,43 @@
       <types>String</types>
       <stringQualifiers/>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="35633e19-742a-4b8e-aef4-44b459164f86">
+    <name>ИспользованиеЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использование задания</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="805c95dd-05ad-436d-ac56-db0830bcf89f">
+    <name>ПредставлениеРасписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Представление расписания</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:StringValue"/>

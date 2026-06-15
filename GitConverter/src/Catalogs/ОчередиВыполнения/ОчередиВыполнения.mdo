@@ -179,10 +179,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="8598b948-ce84-4fb1-8c85-e395313107e9">
-    <name>РегламентноеЗадание</name>
+    <name>ИдентификаторЗадания</name>
     <synonym>
       <key>ru</key>
-      <value>Регламентное задание</value>
+      <value>Идентификатор задания</value>
     </synonym>
     <type>
       <types>UUID</types>
@@ -238,6 +238,43 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="dfb3e33b-c775-47fa-b62d-18c53d20a634">
+    <name>ИспользованиеЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использование задания</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7dfeb992-4d0d-4e4a-839b-0341f7be46bd">
+    <name>ПредставлениеРасписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Представление расписания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="1c0a4154-eaef-4d71-a178-18fa4775eb23">
     <name>ФормаЭлемента</name>
     <synonym>
@@ -256,6 +293,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="09f81c0d-e8dc-4901-880a-b755b8316077">
+    <name>НастойкаОбщихОчередей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настойка общих очередей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <commands uuid="524e1d61-4497-470f-8daf-5f7a43df3323">
     <name>ОчередиВыполнения</name>
     <synonym>
@@ -266,6 +312,15 @@
     <commandParameterType>
       <types>CatalogRef.ХранилищаКонфигураций</types>
     </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="5813b8b4-6722-4d10-8156-c0b323abe0dd">
+    <name>НастойкаОбщихОчередей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настойка общих очередей</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
     <representation>Auto</representation>
   </commands>
 </mdclass:Catalog>

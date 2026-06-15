@@ -91,45 +91,6 @@
   <items xsi:type="form:FormGroup">
     <name>Группа1</name>
     <id>10</id>
-    <items xsi:type="form:FormField">
-      <name>ИспользоватьОчередиВыполнения</name>
-      <id>4</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>НаборКонстант.ИспользоватьОчередиВыполнения</segments>
-      </dataPath>
-      <titleLocation>Right</titleLocation>
-      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-      <handlers>
-        <event>OnChange</event>
-        <name>ИспользоватьОчередиВыполненияПриИзменении</name>
-      </handlers>
-      <extendedTooltip>
-        <name>ИспользоватьОчередиВыполненияРасширеннаяПодсказка</name>
-        <id>6</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ИспользоватьОчередиВыполненияКонтекстноеМеню</name>
-        <id>5</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>CheckBoxField</type>
-      <editMode>EnterOnInput</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-    </items>
     <items xsi:type="form:Decoration">
       <name>ОткрытьОчередиИсполнения</name>
       <id>16</id>

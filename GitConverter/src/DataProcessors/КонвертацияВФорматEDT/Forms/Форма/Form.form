@@ -1194,7 +1194,7 @@ ring edt platform-versions
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>FunctionalOption.ИспользоватьОчередиВыполнения</functionalOptions>
+    <functionalOptions>35156dda-4dd8-4fc8-b132-3b208ffc2fab</functionalOptions>
   </attributes>
   <attributes>
     <name>ОтключитьРегламентныеЗадания</name>
