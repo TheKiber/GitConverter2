@@ -77,6 +77,7 @@
   <commonPictures>CommonPicture.ВыполнитьРегламентноеЗаданиеВручную</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация48</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <sessionParameters>SessionParameter.ПараметрыКлиентаНаСервере</sessionParameters>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.АдминистраторСистемы</roles>
   <roles>Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</roles>
@@ -123,7 +124,6 @@
   <enums>Enum.ТипыХранилищаКонфигураций</enums>
   <reports>Report.СкоростьКонвертации</reports>
   <dataProcessors>DataProcessor.РегламентныеИФоновыеЗадания</dataProcessors>
-  <dataProcessors>DataProcessor.КонвертацияВФорматEDT</dataProcessors>
   <informationRegisters>InformationRegister.ИнформацияПользователей</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияВерсий</informationRegisters>
 </mdclass:Configuration>

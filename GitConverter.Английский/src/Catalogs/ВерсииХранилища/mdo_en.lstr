@@ -1,7 +1,7 @@
 #Translations for: src/Catalogs/ВерсииХранилища/ВерсииХранилища.mdo
 
 Attribute.ВыгрузкаИзменений.Synonym=Dump changes
-Attribute.ВыгрузкаИзменений.ToolTip=From the version base dumped only the changes compared to the previous version. Available starting from platform 8.3.10.
+Attribute.ВыгрузкаИзменений.ToolTip=From the version base dumped only the changes compared to the previous version.
 Attribute.ДатаСоздания.Synonym=Creation date
 Attribute.Источник.Synonym=Source
 Attribute.Источник.ToolTip=The source of repository version dumping

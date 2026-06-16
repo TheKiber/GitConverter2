@@ -573,7 +573,6 @@
 	ХранилищаКонфигураций.УдалятьКонфигурацииПоставщиков КАК УдалятьКонфигурацииПоставщиков,
 	ХранилищаКонфигураций.ВыгружатьИзменения КАК ВыгружатьИзменения,
 	ХранилищаКонфигураций.Описание КАК Описание,
-	ХранилищаКонфигураций.КонвертироватьВФорматEDT КАК КонвертироватьВФорматEDT,
 	ХранилищаКонфигураций.ИспользованиеЗадания КАК ИспользованиеЗадания,
 	ХранилищаКонфигураций.ПредставлениеРасписания КАК ПредставлениеРасписания
 ИЗ
@@ -595,6 +594,10 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ВерсияПлатформыХранилища</dataPath>
         <field>ВерсияПлатформыХранилища</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИмяПредопределенныхДанных</dataPath>
@@ -677,26 +680,6 @@
         <field>ТекстОшибки</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ВерсияВGit</dataPath>
-        <field>ВерсияВGit</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИспользованиеЗадания</dataPath>
-        <field>ИспользованиеЗадания</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПоследняяВерсия</dataPath>
-        <field>ПоследняяВерсия</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Наименование</dataPath>
-        <field>Наименование</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПредставлениеРасписания</dataPath>
-        <field>ПредставлениеРасписания</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>УдалятьКонфигурацииПоставщиков</dataPath>
         <field>УдалятьКонфигурацииПоставщиков</field>
       </fields>
@@ -705,12 +688,12 @@
         <field>Предопределенный</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Ссылка</dataPath>
-        <field>Ссылка</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ПометкаУдаления</dataPath>
         <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Наименование</dataPath>
+        <field>Наименование</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Адрес</dataPath>
@@ -741,12 +724,28 @@
         <field>ПарольПользователяХранилища</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИспользованиеЗадания</dataPath>
+        <field>ИспользованиеЗадания</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияВGit</dataPath>
+        <field>ВерсияВGit</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЛокальныйКаталогGit</dataPath>
         <field>ЛокальныйКаталогGit</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>УдалятьВременныеДанныеВерсииПослеКоммита</dataPath>
         <field>УдалятьВременныеДанныеВерсииПослеКоммита</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПредставлениеРасписания</dataPath>
+        <field>ПредставлениеРасписания</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПоследняяВерсия</dataPath>
+        <field>ПоследняяВерсия</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ПарольСервераGit</dataPath>
@@ -775,10 +774,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Описание</dataPath>
         <field>Описание</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>КонвертироватьВФорматEDT</dataPath>
-        <field>КонвертироватьВФорматEDT</field>
       </fields>
     </extInfo>
   </attributes>

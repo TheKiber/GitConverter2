@@ -661,27 +661,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="02dee9a8-9e7c-4ecd-8dc5-46666fa8bb52">
-    <name>КонвертироватьВФорматEDT</name>
-    <synonym>
-      <key>ru</key>
-      <value>Конвертировать в формат EDT</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Рекомендуется использовать конвертацию в формат 1C:EDT. Для переключения устаревших настроек воспользуйтесь обработкой &quot;Конвертация в формат EDT&quot;</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue">
-      <value>true</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="40bd28b0-6e2d-452e-bf70-d898a56769ec">
     <name>ДобавлятьМеткиСВерсиейКонфигурации</name>
     <synonym>

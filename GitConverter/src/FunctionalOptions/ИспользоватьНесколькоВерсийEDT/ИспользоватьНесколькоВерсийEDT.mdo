@@ -8,6 +8,5 @@
   <location>Constant.ИспользоватьНесколькоВерсийEDT</location>
   <privilegedGetMode>true</privilegedGetMode>
   <content>Catalog.ХранилищаКонфигураций.Attribute.ВерсияEDT</content>
-  <content>DataProcessor.КонвертацияВФорматEDT.Attribute.ВерсияEDT</content>
   <content>Catalog.ХранилищаКонфигураций.Attribute.ВерсияEDTCLI</content>
 </mdclass:FunctionalOption>
