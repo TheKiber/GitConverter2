@@ -256,8 +256,6 @@
             <maxWidth>15</maxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
-            <dropListButton>true</dropListButton>
-            <listChoiceMode>true</listChoiceMode>
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
@@ -1604,8 +1602,6 @@
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
-            <dropListButton>true</dropListButton>
-            <listChoiceMode>true</listChoiceMode>
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
@@ -4195,7 +4191,6 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>35156dda-4dd8-4fc8-b132-3b208ffc2fab</functionalOptions>
     <savedData>true</savedData>
   </attributes>
   <attributes>

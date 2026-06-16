@@ -133,21 +133,69 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="c73b46ce-1a23-452b-8e09-2b68bf2f5034">
-    <name>ВерсияПлатформыХранилища</name>
+  <attributes uuid="e17f8980-c056-4a8f-b628-11c972d6459f">
+    <name>АдресРепозиторияGit</name>
     <synonym>
       <key>ru</key>
-      <value>Версия платформы хранилища</value>
+      <value>Адрес репозитория git</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>25</length>
+        <length>1000</length>
       </stringQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Позволяет указать версию платформы для подключения к Хранилищу 1С, откличную от версии выгрузки. Если не указано, то используется версия платформы, указанная в справочнике настройки конрвертации хранилища.</value>
+      <value>Адрес репозитория Git на сервере. Возможно указание http, https или ssh адреса.  Для варианта SSH авторизации необходимо настроить авторизацию на Git-сервер для пользователя ОС от имени которого запущен сервер 1С.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="53717675-a1d7-499f-91bd-89e9d50bf407">
+    <name>БазовыйПроект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовый проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХранилищаКонфигураций</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипХранилища</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыХранилищаКонфигураций.EnumValue.Конфигурация</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3fe44b23-5143-459d-9549-06f56e2c70db">
+    <name>ВерсияEDT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия EDT</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Компонента ring, в случае если на сервере конвертации хранилища установлено несколько версий EDT, требует явного указания версии. После указания версии во всех командах ring edt будет установлен номер версии.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -156,91 +204,14 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="cc42b1ad-4215-4286-9f90-ed31171b7d43">
-    <name>ВерсияПлатформыВыгрузки</name>
+  <attributes uuid="cd5d26c1-db61-44fa-b213-bf32fc489f2b">
+    <name>ВерсияEDTCLI</name>
     <synonym>
       <key>ru</key>
-      <value>Версия платформы выгрузки</value>
+      <value>Версия EDTCLI</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>25</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Если не указано, то используется текущая версия платформы сервера 1С:Предприятия.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="b2b6ca28-32ca-45e8-8e5a-9974c699724c">
-    <name>ИдентификаторЗадания</name>
-    <synonym>
-      <key>ru</key>
-      <value>Идентификатор задания</value>
-    </synonym>
-    <type>
-      <types>UUID</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="2f6cc1a0-2612-47b8-8b47-9426ef0d5891">
-    <name>КаталогВыгрузкиВерсий</name>
-    <synonym>
-      <key>ru</key>
-      <value>Каталог выгрузки версий</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="66c00a58-0e73-4ebf-9fc6-a89a3d94ddd8">
-    <name>ИмяПользователяХранилища</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя пользователя хранилища</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a8780eea-09bc-48dd-9b57-96b98ce3ce90">
-    <name>ПарольПользователяХранилища</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пароль пользователя хранилища</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
+      <types>CatalogRef.ВерсииEDT</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -271,15 +242,61 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="7acadec3-b873-4fd1-9bac-18266e1f1811">
-    <name>ЛокальныйКаталогGit</name>
+  <attributes uuid="cc42b1ad-4215-4286-9f90-ed31171b7d43">
+    <name>ВерсияПлатформыВыгрузки</name>
     <synonym>
       <key>ru</key>
-      <value>Локальный каталог git</value>
+      <value>Версия платформы выгрузки</value>
     </synonym>
     <type>
       <types>String</types>
-      <stringQualifiers/>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если не указано, то используется текущая версия платформы сервера 1С:Предприятия.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c73b46ce-1a23-452b-8e09-2b68bf2f5034">
+    <name>ВерсияПлатформыХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия платформы хранилища</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Позволяет указать версию платформы для подключения к Хранилищу 1С, откличную от версии выгрузки. Если не указано, то используется версия платформы, указанная в справочнике настройки конрвертации хранилища.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="998c0b86-d6e6-4cc6-a4e9-b2872deadb76">
+    <name>ВерсияПроектаEDT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия проекта EDT</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -288,129 +305,36 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="18112d06-0831-4e6f-bb1e-5e707fe198f4">
-    <name>УдалятьВременныеДанныеВерсииПослеКоммита</name>
+  <attributes uuid="2ba6f339-f1e4-42b1-bf2a-d748522971be">
+    <name>ВозниклаОшибка</name>
     <synonym>
       <key>ru</key>
-      <value>Удалять временные данные версии после коммита</value>
+      <value>Возникла ошибка</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Позволяет удалять сразу после коммита каталог временных данных, необходимых для подготовки версии конвертации.</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="62f22b4c-2b94-4a77-bcca-a5b95863bde9">
-    <name>ПерваяВерсия</name>
+  <attributes uuid="f6fd915a-392f-4e7c-8add-97c25765dbd9">
+    <name>ВыгружатьИзменения</name>
     <synonym>
       <key>ru</key>
-      <value>Первая версия</value>
+      <value>Выгружать изменения</value>
     </synonym>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
+      <types>Boolean</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Первая версия в хранилище указывается, если хранилище было сокращено и есть копия хранилища. Если не указано - не учитывается.</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:NumberValue">
-      <value>0</value>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="ee8c5ad9-5104-46d9-85a2-b590b26d8ed5">
-    <name>ПоследняяВерсия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Последняя версия</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Если указано, то новые версии запрашиваться не будут.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="e17f8980-c056-4a8f-b628-11c972d6459f">
-    <name>АдресРепозиторияGit</name>
-    <synonym>
-      <key>ru</key>
-      <value>Адрес репозитория git</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>1000</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Адрес репозитория Git на сервере. Возможно указание http, https или ssh адреса.  Для варианта SSH авторизации необходимо настроить авторизацию на Git-сервер для пользователя ОС от имени которого запущен сервер 1С.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="81e5a1a6-ed57-40f2-a6b5-4457e89ab051">
-    <name>ПользовательСервераGit</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пользователь сервера git</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="06cfe4da-d495-426e-82fe-8e2611ac68f1">
-    <name>ПарольСервераGit</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пароль сервера git</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <passwordMode>true</passwordMode>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -429,6 +353,269 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="40bd28b0-6e2d-452e-bf70-d898a56769ec">
+    <name>ДобавлятьМеткиСВерсиейКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлять метки с версией конфигурации</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При изменении версии конфигурации, например с версии 1.0.0.1 -> 1.0.0.2, на последний коммит с версией 1.0.0.1 будет добавлен тег &quot;v1.0.0.1&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="59fac5ee-ec7b-11e7-cf94-8c859066bfb6">
+    <name>ЗапретитьИспользованиеОбщихОчередей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запретить использование общих очередей</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Будут использованы очереди только для текущего хранилища. Общие очереди выполняют обработку версий хранилища в порядке даты создания.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b2b6ca28-32ca-45e8-8e5a-9974c699724c">
+    <name>ИдентификаторЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ffcb1886-6f91-48fc-80ec-189758a8ed86">
+    <name>ИмяВетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя ветки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value>master</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="66c00a58-0e73-4ebf-9fc6-a89a3d94ddd8">
+    <name>ИмяПользователяХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя пользователя хранилища</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="76a1bac3-27f1-4b26-8d8d-971ea12e9db6">
+    <name>ИмяПроектаEDT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя проекта EDT</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя проекта EDT или относительный путь к каталогу проекта 1C:EDT в репозитории git,  где последний сегмент пути является именем проекта. Не может быть пустым.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c5c98a15-d82d-4c4b-ac45-5f7c1b6d0f13">
+    <name>ИмяРасширения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя расширения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя конфигурации расширения в хранилище 1С</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="35633e19-742a-4b8e-aef4-44b459164f86">
+    <name>ИспользованиеЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использование задания</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1188b116-874e-4783-9837-e2e079624c83">
+    <name>ИспользуетсяCLI</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется CLI (EDT 2024+)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f6cc1a0-2612-47b8-8b47-9426ef0d5891">
+    <name>КаталогВыгрузкиВерсий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог выгрузки версий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f2c4081b-ab44-4c1c-bb40-70dbf5a868be">
+    <name>КаталогДляАрхивацииОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог для архивации ошибок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Каталог, в который будут архивироваться каталоги версий, в которых возникли ошибки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5e351ed8-ed70-4e03-a872-b888b77d36ef">
+    <name>КоличествоКоммитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество коммитов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество коммитов за сеанс фонового процесса, если указано 0 - нет ограничений.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="64440d2f-f470-47ec-8b54-5d8415c137fe">
+    <name>КоличествоОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ошибок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7acadec3-b873-4fd1-9bac-18266e1f1811">
+    <name>ЛокальныйКаталогGit</name>
+    <synonym>
+      <key>ru</key>
+      <value>Локальный каталог git</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -454,27 +641,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:NumberValue">
       <value>0</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="ffcb1886-6f91-48fc-80ec-189758a8ed86">
-    <name>ИмяВетки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя ветки</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value>master</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -524,125 +690,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="59fac5ee-ec7b-11e7-cf94-8c859066bfb6">
-    <name>ЗапретитьИспользованиеОбщихОчередей</name>
-    <synonym>
-      <key>ru</key>
-      <value>Запретить использование общих очередей</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Будут использованы очереди только для текущего хранилища. Общие очереди выполняют обработку версий хранилища в порядке даты создания.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="5e351ed8-ed70-4e03-a872-b888b77d36ef">
-    <name>КоличествоКоммитов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Количество коммитов</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Количество коммитов за сеанс фонового процесса, если указано 0 - нет ограничений.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="be0c9209-6d44-455c-a1a2-dae0e4d681a0">
-    <name>РазрешитьПомещатьАнонимноЕслиНеНайденПользователь</name>
-    <synonym>
-      <key>ru</key>
-      <value>Разрешить помещать анонимно если не найден пользователь</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Если пользователь хранилища не найден в &quot;Информации пользователей&quot;, либо для него отсутствует email - для такого пользователя не будет разрешено выполнять коммит. Иначе, будет выполнен коммит от имени anonimous@localhost.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="76a1bac3-27f1-4b26-8d8d-971ea12e9db6">
-    <name>ИмяПроектаEDT</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя проекта EDT</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Имя проекта EDT или относительный путь к каталогу проекта 1C:EDT в репозитории git,  где последний сегмент пути является именем проекта. Не может быть пустым.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="125b0fab-30a6-4afd-84a5-856d3a3d375f">
-    <name>УдалятьКонфигурацииПоставщиков</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалять конфигурации поставщиков</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Позволяет не хранить в репозитории файлы конфигураций поставщиков для оптимизации репозитория. 
-Не рекомендуется включать, если планируется загрузка конфигурации из файлов и обновление конфигураций поставщиков.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="f6fd915a-392f-4e7c-8add-97c25765dbd9">
-    <name>ВыгружатьИзменения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выгружать изменения</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:BooleanValue">
-      <value>true</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="6ce778d3-9fad-43b1-afe9-a1e79e7ff535">
     <name>Описание</name>
     <synonym>
@@ -657,48 +704,6 @@
     <extendedEdit>true</extendedEdit>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="40bd28b0-6e2d-452e-bf70-d898a56769ec">
-    <name>ДобавлятьМеткиСВерсиейКонфигурации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Добавлять метки с версией конфигурации</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>При изменении версии конфигурации, например с версии 1.0.0.1 -> 1.0.0.2, на последний коммит с версией 1.0.0.1 будет добавлен тег &quot;v1.0.0.1&quot;.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="3fe44b23-5143-459d-9549-06f56e2c70db">
-    <name>ВерсияEDT</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версия EDT</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Компонента ring, в случае если на сервере конвертации хранилища установлено несколько версий EDT, требует явного указания версии. После указания версии во всех командах ring edt будет установлен номер версии.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:StringValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -722,145 +727,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="3cf31fb7-d51a-4b33-b104-dde96a56cd9e">
-    <name>ТипХранилища</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип хранилища</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ТипыХранилищаКонфигураций</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.ТипыХранилищаКонфигураций.EnumValue.Конфигурация</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="c5c98a15-d82d-4c4b-ac45-5f7c1b6d0f13">
-    <name>ИмяРасширения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя расширения</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Имя конфигурации расширения в хранилище 1С</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="53717675-a1d7-499f-91bd-89e9d50bf407">
-    <name>БазовыйПроект</name>
-    <synonym>
-      <key>ru</key>
-      <value>Базовый проект</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ХранилищаКонфигураций</types>
-      <types>String</types>
-      <stringQualifiers>
-        <length>255</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <choiceParameters>
-      <name>Отбор.ТипХранилища</name>
-      <value xsi:type="core:ReferenceValue">
-        <value>Enum.ТипыХранилищаКонфигураций.EnumValue.Конфигурация</value>
-      </value>
-    </choiceParameters>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="998c0b86-d6e6-4cc6-a4e9-b2872deadb76">
-    <name>ВерсияПроектаEDT</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версия проекта EDT</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>20</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1188b116-874e-4783-9837-e2e079624c83">
-    <name>ИспользуетсяCLI</name>
-    <synonym>
-      <key>ru</key>
-      <value>Используется CLI (EDT 2024+)</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="cd5d26c1-db61-44fa-b213-bf32fc489f2b">
-    <name>ВерсияEDTCLI</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версия EDTCLI</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ВерсииEDT</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="f2c4081b-ab44-4c1c-bb40-70dbf5a868be">
-    <name>КаталогДляАрхивацииОшибок</name>
-    <synonym>
-      <key>ru</key>
-      <value>Каталог для архивации ошибок</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>256</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Каталог, в который будут архивироваться каталоги версий, в которых возникли ошибки.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="4b0097a8-eafd-440f-b723-2eb3292fe160">
     <name>ОтправлятьКоммитыВРепозиторийGit</name>
     <synonym>
@@ -876,14 +742,17 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="2ba6f339-f1e4-42b1-bf2a-d748522971be">
-    <name>ВозниклаОшибка</name>
+  <attributes uuid="a8780eea-09bc-48dd-9b57-96b98ce3ce90">
+    <name>ПарольПользователяХранилища</name>
     <synonym>
       <key>ru</key>
-      <value>Возникла ошибка</value>
+      <value>Пароль пользователя хранилища</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -891,11 +760,31 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="64440d2f-f470-47ec-8b54-5d8415c137fe">
-    <name>КоличествоОшибок</name>
+  <attributes uuid="06cfe4da-d495-426e-82fe-8e2611ac68f1">
+    <name>ПарольСервераGit</name>
     <synonym>
       <key>ru</key>
-      <value>Количество ошибок</value>
+      <value>Пароль сервера git</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62f22b4c-2b94-4a77-bcca-a5b95863bde9">
+    <name>ПерваяВерсия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первая версия</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -903,37 +792,53 @@
         <precision>10</precision>
       </numberQualifiers>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Первая версия в хранилище указывается, если хранилище было сокращено и есть копия хранилища. Если не указано - не учитывается.</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="7e926b28-afbe-43cf-b3a6-fa2583ec3824">
-    <name>ТекстОшибки</name>
+  <attributes uuid="81e5a1a6-ed57-40f2-a6b5-4457e89ab051">
+    <name>ПользовательСервераGit</name>
     <synonym>
       <key>ru</key>
-      <value>Текст ошибки</value>
+      <value>Пользователь сервера git</value>
     </synonym>
     <type>
       <types>String</types>
-      <stringQualifiers/>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:StringValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="35633e19-742a-4b8e-aef4-44b459164f86">
-    <name>ИспользованиеЗадания</name>
+  <attributes uuid="ee8c5ad9-5104-46d9-85a2-b590b26d8ed5">
+    <name>ПоследняяВерсия</name>
     <synonym>
       <key>ru</key>
-      <value>Использование задания</value>
+      <value>Последняя версия</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если указано, то новые версии запрашиваться не будут.</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -959,6 +864,99 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="be0c9209-6d44-455c-a1a2-dae0e4d681a0">
+    <name>РазрешитьПомещатьАнонимноЕслиНеНайденПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить помещать анонимно если не найден пользователь</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если пользователь хранилища не найден в &quot;Информации пользователей&quot;, либо для него отсутствует email - для такого пользователя не будет разрешено выполнять коммит. Иначе, будет выполнен коммит от имени anonimous@localhost.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7e926b28-afbe-43cf-b3a6-fa2583ec3824">
+    <name>ТекстОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3cf31fb7-d51a-4b33-b104-dde96a56cd9e">
+    <name>ТипХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип хранилища</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыХранилищаКонфигураций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыХранилищаКонфигураций.EnumValue.Конфигурация</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="18112d06-0831-4e6f-bb1e-5e707fe198f4">
+    <name>УдалятьВременныеДанныеВерсииПослеКоммита</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалять временные данные версии после коммита</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Позволяет удалять сразу после коммита каталог временных данных, необходимых для подготовки версии конвертации.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="125b0fab-30a6-4afd-84a5-856d3a3d375f">
+    <name>УдалятьКонфигурацииПоставщиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалять конфигурации поставщиков</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Позволяет не хранить в репозитории файлы конфигураций поставщиков для оптимизации репозитория. 
+Не рекомендуется включать, если планируется загрузка конфигурации из файлов и обновление конфигураций поставщиков.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
