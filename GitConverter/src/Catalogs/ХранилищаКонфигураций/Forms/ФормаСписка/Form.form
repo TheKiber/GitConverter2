@@ -490,10 +490,6 @@
     <horizontalStretch>true</horizontalStretch>
     <verticalStretch>true</verticalStretch>
     <extInfo xsi:type="form:DynamicListTableExtInfo">
-      <handlers>
-        <event>OnGetDataAtServer</event>
-        <name>СписокПриПолученииДанныхНаСервере</name>
-      </handlers>
       <autoRefreshPeriod>60</autoRefreshPeriod>
       <period>
         <startDate>0001-01-01T00:00:00</startDate>
