@@ -5,10 +5,10 @@
     <valueManagerType typeId="9dab69f0-9064-499d-a2a0-5d2b90a9b259" valueTypeId="0532e029-10e9-4f91-a073-4be77024edb2"/>
     <valueKeyType typeId="67f17c29-7d51-543e-9471-50c6dd05ec7f" valueTypeId="2ce84c61-7c96-5381-99bd-8c82f034750c"/>
   </producedTypes>
-  <name>МаксимальноеКоличествоИнкрементальныхВерсийПодряд</name>
+  <name>МаксимальноеКоличествоЧастичныхВыгрузокПодряд</name>
   <synonym>
     <key>ru</key>
-    <value>Максимальное количество инкрементальных версий подряд</value>
+    <value>Максимальное количество частичных выгрузок подряд</value>
   </synonym>
   <type>
     <types>Number</types>

@@ -104,15 +104,15 @@
   <functionalOptions>FunctionalOption.ДобавлятьВременныеБазыВСписок</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьНесколькоВерсийEDT</functionalOptions>
   <constants>Constant.АрхивироватьОшибки</constants>
+  <constants>Constant.ВерсияДанныхИБ</constants>
   <constants>Constant.ДобавлятьВременныеБазыВСписок</constants>
   <constants>Constant.ИспользоватьНесколькоВерсийEDT</constants>
   <constants>Constant.КонвертацияОстановлена</constants>
-  <constants>Constant.МаксимальноеКоличествоИнкрементальныхВерсийПодряд</constants>
   <constants>Constant.МаксимальноеКоличествоОшибокВерсии</constants>
+  <constants>Constant.МаксимальноеКоличествоЧастичныхВыгрузокПодряд</constants>
   <constants>Constant.МинутДоПринудительнойОстановки</constants>
   <constants>Constant.МинутДоПроверкиЗависания</constants>
   <constants>Constant.ПутьКВерсиямПлатформыНаСервере</constants>
-  <constants>Constant.ВерсияДанныхИБ</constants>
   <commonForms>CommonForm.Настройки</commonForms>
   <catalogs>Catalog.ВерсииХранилища</catalogs>
   <catalogs>Catalog.КопииХранилищКонфигурации</catalogs>
