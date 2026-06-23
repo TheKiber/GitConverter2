@@ -102,11 +102,9 @@
   <scheduledJobs>ScheduledJob.ОбработкаОчереди</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОчисткаОтМусора</scheduledJobs>
   <functionalOptions>FunctionalOption.ДобавлятьВременныеБазыВСписок</functionalOptions>
-  <functionalOptions>FunctionalOption.ИспользоватьНесколькоВерсийEDT</functionalOptions>
   <constants>Constant.АрхивироватьОшибки</constants>
   <constants>Constant.ВерсияДанныхИБ</constants>
   <constants>Constant.ДобавлятьВременныеБазыВСписок</constants>
-  <constants>Constant.ИспользоватьНесколькоВерсийEDT</constants>
   <constants>Constant.КонвертацияОстановлена</constants>
   <constants>Constant.МаксимальноеКоличествоОшибокВерсии</constants>
   <constants>Constant.МаксимальноеКоличествоЧастичныхВыгрузокПодряд</constants>

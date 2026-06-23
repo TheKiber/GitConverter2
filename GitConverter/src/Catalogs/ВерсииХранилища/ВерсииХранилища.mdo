@@ -177,38 +177,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="655bbacc-b888-4515-b93f-64df2b627efe">
-    <name>УдалитьКаталогФайловКонфигурации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалить каталог файлов конфигурации</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="e0557715-5cad-48d3-89fa-7c9dd0df5617">
-    <name>УдалитьКаталогИБ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалить каталог ИБ</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="8dfb2f95-a241-4f70-b997-dc57b2ab7c5a">
     <name>Состояние</name>
     <synonym>
@@ -284,10 +252,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="1c5a3283-9078-4779-8f9d-42d9f3592229">
-    <name>ВыгрузкаИзменений</name>
+    <name>ВыгруженыТолькоИзменения</name>
     <synonym>
       <key>ru</key>
-      <value>Выгрузка изменений</value>
+      <value>Выгружены только изменения</value>
     </synonym>
     <type>
       <types>Boolean</types>

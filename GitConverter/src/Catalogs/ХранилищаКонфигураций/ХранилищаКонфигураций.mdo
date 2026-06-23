@@ -181,29 +181,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="3fe44b23-5143-459d-9549-06f56e2c70db">
-    <name>ВерсияEDT</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версия EDT</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Компонента ring, в случае если на сервере конвертации хранилища установлено несколько версий EDT, требует явного указания версии. После указания версии во всех командах ring edt будет установлен номер версии.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="cd5d26c1-db61-44fa-b213-bf32fc489f2b">
     <name>ВерсияEDTCLI</name>
     <synonym>
@@ -283,25 +260,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="998c0b86-d6e6-4cc6-a4e9-b2872deadb76">
-    <name>ВерсияПроектаEDT</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версия проекта EDT</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>20</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -499,21 +457,6 @@
     <synonym>
       <key>ru</key>
       <value>Использование задания</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1188b116-874e-4783-9837-e2e079624c83">
-    <name>ИспользуетсяCLI</name>
-    <synonym>
-      <key>ru</key>
-      <value>Используется CLI (EDT 2024+)</value>
     </synonym>
     <type>
       <types>Boolean</types>

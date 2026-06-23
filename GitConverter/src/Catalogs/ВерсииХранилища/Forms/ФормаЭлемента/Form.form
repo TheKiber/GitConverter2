@@ -394,7 +394,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВыгрузкаИзменений</name>
+      <name>ВыгруженыТолькоИзменения</name>
       <id>83</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -402,11 +402,11 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВыгрузкаИзменений</segments>
+        <segments>Объект.ВыгруженыТолькоИзменения</segments>
       </dataPath>
       <titleLocation>Right</titleLocation>
       <extendedTooltip>
-        <name>ВыгрузкаИзмененийРасширеннаяПодсказка</name>
+        <name>ВыгруженыТолькоИзмененияРасширеннаяПодсказка</name>
         <id>85</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -416,7 +416,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВыгрузкаИзмененийКонтекстноеМеню</name>
+        <name>ВыгруженыТолькоИзмененияКонтекстноеМеню</name>
         <id>84</id>
         <autoFill>true</autoFill>
       </contextMenu>
