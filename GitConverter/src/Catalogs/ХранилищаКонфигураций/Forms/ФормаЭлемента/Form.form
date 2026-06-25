@@ -2089,6 +2089,7 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ВыполнятьКоммиты</segments>
           </dataPath>
+          <titleLocation>None</titleLocation>
           <shortcut>Ctrl+S</shortcut>
           <handlers>
             <event>OnChange</event>
@@ -2127,7 +2128,7 @@
             <choiceList>
               <presentation>
                 <key>ru</key>
-                <value>Отключено (Пауза, временно!)</value>
+                <value>Не выполнять коммиты (временная пауза)</value>
               </presentation>
               <value xsi:type="core:StringValue">
                 <value>Отключено</value>
@@ -3985,7 +3986,6 @@
     <edit>
       <common>true</common>
     </edit>
-    <functionalOptions>35156dda-4dd8-4fc8-b132-3b208ffc2fab</functionalOptions>
     <savedData>true</savedData>
   </attributes>
   <attributes>

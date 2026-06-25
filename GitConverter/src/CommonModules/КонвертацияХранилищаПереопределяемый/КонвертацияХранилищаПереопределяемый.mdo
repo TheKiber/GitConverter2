@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0935a18f-0cc8-4fd2-992a-7529add33cda">
+  <name>КонвертацияХранилищаПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конвертация хранилища переопределяемый</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

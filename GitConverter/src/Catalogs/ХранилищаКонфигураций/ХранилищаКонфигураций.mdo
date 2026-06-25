@@ -510,7 +510,7 @@
     <name>КоличествоКоммитов</name>
     <synonym>
       <key>ru</key>
-      <value>Количество коммитов</value>
+      <value>Максимум коммитов в одном сеансе</value>
     </synonym>
     <type>
       <types>Number</types>

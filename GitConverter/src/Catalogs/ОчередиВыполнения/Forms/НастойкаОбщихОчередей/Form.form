@@ -465,10 +465,6 @@
           <segments>Вторник</segments>
         </dataPath>
         <titleLocation>Right</titleLocation>
-        <handlers>
-          <event>OnChange</event>
-          <name>ДниНеделиПриИзменении</name>
-        </handlers>
         <extendedTooltip>
           <name>ВторникРасширеннаяПодсказка</name>
           <id>101</id>

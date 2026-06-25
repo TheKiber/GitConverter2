@@ -84,6 +84,8 @@
   <commonModules>CommonModule.ДлительныеОперации</commonModules>
   <commonModules>CommonModule.ДлительныеОперацииКлиент</commonModules>
   <commonModules>CommonModule.КонвертацияХранилища</commonModules>
+  <commonModules>CommonModule.КонвертацияХранилищаПереопределяемый</commonModules>
+  <commonModules>CommonModule.КонвертацияХранилищаПовтИсп</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияВызовСервера</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияГлобальный</commonModules>
