@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
   <items xsi:type="form:FormGroup">
     <name>СписокКомпоновщикНастроекПользовательскиеНастройки</name>
     <id>1</id>
@@ -58,7 +58,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>Список.Owner</segments>
+          <segments>Список.Владелец</segments>
         </dataPath>
         <extendedTooltip>
           <name>ВладелецРасширеннаяПодсказка</name>
@@ -94,7 +94,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>Список.Code</segments>
+          <segments>Список.Код</segments>
         </dataPath>
         <defaultItem>true</defaultItem>
         <extendedTooltip>
@@ -110,6 +110,43 @@
         <contextMenu>
           <name>КодКонтекстноеМеню</name>
           <id>17</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <width>10</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ВерсияКонфигурации</name>
+        <id>91</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Список.ВерсияКонфигурации</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ВерсияКонфигурацииРасширеннаяПодсказка</name>
+          <id>93</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ВерсияКонфигурацииКонтекстноеМеню</name>
+          <id>92</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>LabelField</type>
@@ -1002,34 +1039,42 @@
       <common>true</common>
     </edit>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
-      <segments>Список.Ref</segments>
+      <segments>Список.Ссылка</segments>
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	СправочникВерсииХранилища.Ссылка,
-	СправочникВерсииХранилища.ПометкаУдаления,
-	СправочникВерсииХранилища.Владелец,
-	СправочникВерсииХранилища.Код,
-	СправочникВерсииХранилища.ДатаСоздания,
-	СправочникВерсииХранилища.Пользователь,
-	СправочникВерсииХранилища.Комментарий,
-	СправочникВерсииХранилища.Состояние,
-	СправочникВерсииХранилища.КаталогВременныхФайлов,
-	СправочникВерсииХранилища.Источник,
-	СправочникВерсииХранилища.КоличествоМетаданных,
-	СправочникВерсииХранилища.ВыгруженыТолькоИзменения,
-	СправочникВерсииХранилища.Предопределенный,
-	СправочникВерсииХранилища.ИмяПредопределенныхДанных,
-	ЕСТЬNULL(ИнформацияПользователей.Email, ЕСТЬNULL(ОбщаяИнформацияПользователей.Email, ЕСТЬNULL(ОбщиеНастрокиПользователей.Email, &quot;&quot;))) КАК Email
+	Шапка.Ссылка КАК Ссылка,
+	Шапка.ПометкаУдаления КАК ПометкаУдаления,
+	Шапка.Владелец КАК Владелец,
+	Шапка.Код КАК Код,
+	Шапка.ДатаСоздания КАК ДатаСоздания,
+	Шапка.Пользователь КАК Пользователь,
+	Шапка.Комментарий КАК Комментарий,
+	Шапка.Состояние КАК Состояние,
+	Шапка.КаталогВременныхФайлов КАК КаталогВременныхФайлов,
+	Шапка.Источник КАК Источник,
+	Шапка.КоличествоМетаданных КАК КоличествоМетаданных,
+	Шапка.ВыгруженыТолькоИзменения КАК ВыгруженыТолькоИзменения,
+	Шапка.Предопределенный КАК Предопределенный,
+	Шапка.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ЕСТЬNULL(ИнформацияПользователей.Email, ЕСТЬNULL(ОбщаяИнформацияПользователей.Email, ЕСТЬNULL(ОбщиеНастрокиПользователей.Email, &quot;&quot;))) КАК Email,
+	Шапка.ВерсияДанных КАК ВерсияДанных,
+	Шапка.ВерсияКонфигурации КАК ВерсияКонфигурации,
+	Шапка.ВозниклаОшибка КАК ВозниклаОшибка,
+	Шапка.ДатаНачалаОбработкиСостояния КАК ДатаНачалаОбработкиСостояния,
+	Шапка.КоличествоОшибок КАК КоличествоОшибок,
+	Шапка.ТекстОшибки КАК ТекстОшибки,
+	Шапка.ТребуетсяПолнаяВыгрузка КАК ТребуетсяПолнаяВыгрузка,
+	Шапка.Хеш КАК Хеш
 ИЗ
-	Справочник.ВерсииХранилища КАК СправочникВерсииХранилища
+	Справочник.ВерсииХранилища КАК Шапка
 		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИнформацияПользователей КАК ИнформацияПользователей
-		ПО СправочникВерсииХранилища.Пользователь = ИнформацияПользователей.Пользователь
-		И СправочникВерсииХранилища.Владелец = ИнформацияПользователей.Хранилище
+		ПО Шапка.Пользователь = ИнформацияПользователей.Пользователь
+			И Шапка.Владелец = ИнформацияПользователей.Хранилище
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИнформацияПользователей КАК ОбщаяИнформацияПользователей
-		ПО СправочникВерсииХранилища.Пользователь = ОбщаяИнформацияПользователей.Пользователь
-		И ОбщаяИнформацияПользователей.Хранилище = ЗНАЧЕНИЕ(Справочник.ХранилищаКонфигураций.ПустаяСсылка)
+		ПО Шапка.Пользователь = ОбщаяИнформацияПользователей.Пользователь
+			И (ОбщаяИнформацияПользователей.Хранилище = ЗНАЧЕНИЕ(Справочник.ХранилищаКонфигураций.ПустаяСсылка))
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИнформацияПользователей КАК ОбщиеНастрокиПользователей
 		ПО (ОбщиеНастрокиПользователей.Пользователь = &quot;&quot;)}</queryText>
       <mainTable>Catalog.ВерсииХранилища</mainTable>
@@ -1038,6 +1083,110 @@
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Состав</dataPath>
+        <field>Состав</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияКонфигурации</dataPath>
+        <field>ВерсияКонфигурации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВозниклаОшибка</dataPath>
+        <field>ВозниклаОшибка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Хеш</dataPath>
+        <field>Хеш</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТребуетсяПолнаяВыгрузка</dataPath>
+        <field>ТребуетсяПолнаяВыгрузка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаНачалаОбработкиСостояния</dataPath>
+        <field>ДатаНачалаОбработкиСостояния</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТекстОшибки</dataPath>
+        <field>ТекстОшибки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоОшибок</dataPath>
+        <field>КоличествоОшибок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Код</dataPath>
+        <field>Код</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Владелец</dataPath>
+        <field>Владелец</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаСоздания</dataPath>
+        <field>ДатаСоздания</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Пользователь</dataPath>
+        <field>Пользователь</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Комментарий</dataPath>
+        <field>Комментарий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Состояние</dataPath>
+        <field>Состояние</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КаталогВременныхФайлов</dataPath>
+        <field>КаталогВременныхФайлов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Источник</dataPath>
+        <field>Источник</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыгруженыТолькоИзменения</dataPath>
+        <field>ВыгруженыТолькоИзменения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоМетаданных</dataPath>
+        <field>КоличествоМетаданных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Email</dataPath>
+        <field>Email</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Email</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияДанных</dataPath>
+        <field>ВерсияДанных</field>
+      </fields>
     </extInfo>
   </attributes>
   <attributes>

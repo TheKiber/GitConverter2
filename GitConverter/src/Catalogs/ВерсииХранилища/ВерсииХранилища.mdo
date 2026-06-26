@@ -125,6 +125,74 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ВерсииХранилища.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ВерсииХранилища.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="da425ebb-32c8-4f95-ae25-78158251ab2a">
+    <name>ВерсияКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия конфигурации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1165d625-968b-4314-9a16-ba7e8df52725">
+    <name>ВозниклаОшибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возникла ошибка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1c5a3283-9078-4779-8f9d-42d9f3592229">
+    <name>ВыгруженыТолькоИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружены только изменения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Из базы версии выгружены только изменения по сравнению с предыдущей версией.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da028494-9fda-4b74-a5d6-292e3d1d9c95">
+    <name>ДатаНачалаОбработкиСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала обработки состояния</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="f7f6eeac-9489-475f-bb38-97aade2249a4">
     <name>ДатаСоздания</name>
     <synonym>
@@ -141,17 +209,76 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="cea4c7d2-6deb-4835-9c78-dfa04d2042f4">
-    <name>Пользователь</name>
+  <attributes uuid="0cb96095-f44a-442a-90d5-14bea97f525c">
+    <name>Источник</name>
     <synonym>
       <key>ru</key>
-      <value>Пользователь</value>
+      <value>Источник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХранилищаКонфигураций</types>
+      <types>CatalogRef.ОчередиВыполнения</types>
+      <types>CatalogRef.КопииХранилищКонфигурации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник выгрузки версии хранилища</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="76fe2670-8498-4a8b-bb8f-7e6394a2ee09">
+    <name>КаталогВременныхФайлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог временных файлов</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>100</length>
+        <length>512</length>
       </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="42712ac9-a20c-4b79-908f-257459abcb55">
+    <name>КоличествоМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество метаданных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="79f02a80-5f91-4fd9-8aa4-26998d0baef4">
+    <name>КоличествоОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ошибок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -177,6 +304,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="cea4c7d2-6deb-4835-9c78-dfa04d2042f4">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="8dfb2f95-a241-4f70-b997-dc57b2ab7c5a">
     <name>Состояние</name>
     <synonym>
@@ -185,155 +330,6 @@
     </synonym>
     <type>
       <types>EnumRef.СостоянияВерсии</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="76fe2670-8498-4a8b-bb8f-7e6394a2ee09">
-    <name>КаталогВременныхФайлов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Каталог временных файлов</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>512</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="0cb96095-f44a-442a-90d5-14bea97f525c">
-    <name>Источник</name>
-    <synonym>
-      <key>ru</key>
-      <value>Источник</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ХранилищаКонфигураций</types>
-      <types>CatalogRef.ОчередиВыполнения</types>
-      <types>CatalogRef.КопииХранилищКонфигурации</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Источник выгрузки версии хранилища</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="42712ac9-a20c-4b79-908f-257459abcb55">
-    <name>КоличествоМетаданных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Количество метаданных</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:NumberValue">
-      <value>0</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1c5a3283-9078-4779-8f9d-42d9f3592229">
-    <name>ВыгруженыТолькоИзменения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выгружены только изменения</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Из базы версии выгружены только изменения по сравнению с предыдущей версией.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="8bf28297-9380-4434-8b3e-7c402b561dfc">
-    <name>Хеш</name>
-    <synonym>
-      <key>ru</key>
-      <value>Хеш</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>40</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Хеш SHA1 коммита версии в Git, заполняется автоматически при помещении версии в репозиторий.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1165d625-968b-4314-9a16-ba7e8df52725">
-    <name>ВозниклаОшибка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Возникла ошибка</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="da028494-9fda-4b74-a5d6-292e3d1d9c95">
-    <name>ДатаНачалаОбработкиСостояния</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата начала обработки состояния</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="79f02a80-5f91-4fd9-8aa4-26998d0baef4">
-    <name>КоличествоОшибок</name>
-    <synonym>
-      <key>ru</key>
-      <value>Количество ошибок</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -369,6 +365,28 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8bf28297-9380-4434-8b3e-7c402b561dfc">
+    <name>Хеш</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хеш SHA1 коммита версии в Git, заполняется автоматически при помещении версии в репозиторий.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
