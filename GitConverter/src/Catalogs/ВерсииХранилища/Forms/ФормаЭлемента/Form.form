@@ -399,7 +399,7 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
-        <name>ИмяФайлаЛогаGit</name>
+        <name>ФайлЛогаGit</name>
         <id>101</id>
         <title>
           <key>ru</key>
@@ -411,7 +411,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>ИмяФайлаЛогаGit</segments>
+          <segments>ФайлЛогаGit</segments>
         </dataPath>
         <toolTip>
           <key>ru</key>
@@ -419,7 +419,7 @@
         </toolTip>
         <toolTipRepresentation>Button</toolTipRepresentation>
         <extendedTooltip>
-          <name>ИмяФайлаЛогаGitРасширеннаяПодсказка</name>
+          <name>ФайлЛогаGitРасширеннаяПодсказка</name>
           <id>103</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
@@ -429,7 +429,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ИмяФайлаЛогаGitКонтекстноеМеню</name>
+          <name>ФайлЛогаGitКонтекстноеМеню</name>
           <id>102</id>
           <autoFill>true</autoFill>
         </contextMenu>
@@ -1356,7 +1356,7 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ИмяФайлаЛогаGit</name>
+    <name>ФайлЛогаGit</name>
     <title>
       <key>ru</key>
       <value>Имя файла лога git</value>

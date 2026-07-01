@@ -125,6 +125,24 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ВерсииХранилища.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ВерсииХранилища.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="465e7a07-5e58-4aa1-8693-d3d7bc207b5e">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="da425ebb-32c8-4f95-ae25-78158251ab2a">
     <name>ВерсияКонфигурации</name>
     <synonym>
