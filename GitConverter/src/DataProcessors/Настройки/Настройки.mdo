@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb5d52ba-6705-40c4-b5df-f86c92ba43b5">
+  <producedTypes>
+    <objectType typeId="eea0bf2c-8bad-412e-8a69-df74caff0992" valueTypeId="c3b60f57-4092-4a43-87e9-2d6d6d9c15a3"/>
+    <managerType typeId="ac829796-9b65-4180-898f-c5bab24866f0" valueTypeId="b944ba56-8c15-4600-b544-a37936acac99"/>
+  </producedTypes>
+  <name>Настройки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки</value>
+  </synonym>
+  <defaultForm>DataProcessor.Настройки.Form.Форма</defaultForm>
+  <forms uuid="2a33bfb0-377b-42d0-8895-1d4fac4649b6">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="d93972b2-675c-4ccb-b0f2-21c04cab6780">
+    <name>Настройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Setting</picture>
+    </picture>
+  </commands>
+</mdclass:DataProcessor>

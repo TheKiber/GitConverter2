@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c77aba0c-b111-4e8a-a0e9-c39aaf6b1323">
+  <producedTypes>
+    <managerType typeId="a52648fe-78e7-464e-84d1-d92104e60869" valueTypeId="29cbe027-e482-4a75-be3d-cb29fa882c6a"/>
+    <valueManagerType typeId="4cea17ee-09b1-41d8-9366-86d12225aba2" valueTypeId="72ca535b-723a-45d9-9864-f09dd387b195"/>
+    <valueKeyType typeId="588fcd2a-1208-4357-88ea-02af7e4b8c9c" valueTypeId="58251968-0868-4c37-8c4a-a4421d326848"/>
+  </producedTypes>
+  <name>ВерсияПлатформы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версия платформы</value>
+  </synonym>
+  <dataHistory>Use</dataHistory>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>25</length>
+    </stringQualifiers>
+  </type>
+  <toolTip>
+    <key>ru</key>
+    <value>Версия платформы &quot;по умолчанию&quot; для всех операций конвертации</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

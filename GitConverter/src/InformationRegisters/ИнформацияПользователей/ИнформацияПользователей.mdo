@@ -12,7 +12,7 @@
   <name>ИнформацияПользователей</name>
   <synonym>
     <key>ru</key>
-    <value>Информация пользователей</value>
+    <value>Имена пользователей</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <standardAttributes>
@@ -112,10 +112,11 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
   <dimensions uuid="334b6f24-f1f5-4522-9f24-928134012af5">
@@ -143,4 +144,16 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <commands uuid="cf44c985-9889-46c7-b596-fe47d4d8a799">
+    <name>ИменаПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имена пользователей</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.User</picture>
+    </picture>
+  </commands>
 </mdclass:InformationRegister>

@@ -17,7 +17,6 @@
       <nonNegative>true</nonNegative>
     </numberQualifiers>
   </type>
-  <useStandardCommands>true</useStandardCommands>
   <toolTip>
     <key>ru</key>
     <value>По умолчанию - 180 минут (3 часа)</value>

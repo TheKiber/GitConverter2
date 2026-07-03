@@ -16,7 +16,10 @@
       <precision>10</precision>
     </numberQualifiers>
   </type>
-  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Определяет частоту появления опорных версий с полной выгрузкой XML. Например, количество частичных выгрузок - 4, каждая 5я версия - опорная.</value>
+  </toolTip>
   <minValue xsi:type="core:UndefinedValue"/>
   <maxValue xsi:type="core:UndefinedValue"/>
   <dataLockControlMode>Managed</dataLockControlMode>

@@ -13,10 +13,9 @@
   <type>
     <types>Boolean</types>
   </type>
-  <useStandardCommands>true</useStandardCommands>
   <toolTip>
     <key>ru</key>
-    <value>При возникновении ошибок для каждой версии будет архивироваться первые 3 ошибки для последующего расследования</value>
+    <value>При возникновении ошибок для каждой версии будет архивироваться первые 3 ошибки для последующего расследования. Каталог для архивации ошибок настраивается в карточке хранилища. Если он не заполнен - архивация не выполняется.</value>
   </toolTip>
   <minValue xsi:type="core:UndefinedValue"/>
   <maxValue xsi:type="core:UndefinedValue"/>

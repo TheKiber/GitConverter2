@@ -71,12 +71,32 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
-  <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
+  <styleItems>StyleItem.ЗаголовокПоляЗаполняемогоАвтоматическиЦвет</styleItems>
+  <styleItems>StyleItem.ОбычнаяГруппаЦвет</styleItems>
+  <styleItems>StyleItem.ОбычнаяГруппаШрифт</styleItems>
   <styleItems>StyleItem.ПоясняющийОшибкуТекст</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
+  <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
+  <styleItems>StyleItem.ЦветФонаПредупреждения</styleItems>
+  <styleItems>StyleItem.ЦветФонаСлабогоПредупреждения</styleItems>
+  <styleItems>StyleItem.ЦветФонаУспех</styleItems>
   <commonPictures>CommonPicture.ВыполнитьРегламентноеЗаданиеВручную</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация48</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <commonPictures>CommonPicture.Информация32</commonPictures>
+  <commonPictures>CommonPicture.КартинкаЗапуститьВсе</commonPictures>
+  <commonPictures>CommonPicture.КартинкаОстановитьВсе</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВверх</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВлево</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВниз</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВнизЗеленая</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВнизКрасная</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВнизСерая</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВправоЗеленая</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВправоКрасная</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВправоСерая</commonPictures>
+  <commonPictures>CommonPicture.Успешно</commonPictures>
+  <commonPictures>CommonPicture.Успешно32</commonPictures>
   <sessionParameters>SessionParameter.ПараметрыКлиентаНаСервере</sessionParameters>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.АдминистраторСистемы</roles>
@@ -104,16 +124,19 @@
   <scheduledJobs>ScheduledJob.ОбработкаОчереди</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОчисткаОтМусора</scheduledJobs>
   <functionalOptions>FunctionalOption.ДобавлятьВременныеБазыВСписок</functionalOptions>
+  <functionalOptions>FunctionalOption.ИспользоватьНесколькоВерсийEDT</functionalOptions>
   <constants>Constant.АрхивироватьОшибки</constants>
   <constants>Constant.ВерсияДанныхИБ</constants>
+  <constants>Constant.ВерсияПлатформы</constants>
   <constants>Constant.ДобавлятьВременныеБазыВСписок</constants>
+  <constants>Constant.ИспользоватьНесколькоВерсийEDT</constants>
+  <constants>Constant.КаталогEDT</constants>
   <constants>Constant.КонвертацияОстановлена</constants>
   <constants>Constant.МаксимальноеКоличествоОшибокВерсии</constants>
   <constants>Constant.МаксимальноеКоличествоЧастичныхВыгрузокПодряд</constants>
   <constants>Constant.МинутДоПринудительнойОстановки</constants>
   <constants>Constant.МинутДоПроверкиЗависания</constants>
-  <constants>Constant.ПутьКВерсиямПлатформыНаСервере</constants>
-  <commonForms>CommonForm.Настройки</commonForms>
+  <constants>Constant.ШаблонКаталогаПлатформы</constants>
   <catalogs>Catalog.ВерсииХранилища</catalogs>
   <catalogs>Catalog.КопииХранилищКонфигурации</catalogs>
   <catalogs>Catalog.ОчередиВыполнения</catalogs>
@@ -124,6 +147,8 @@
   <enums>Enum.ТипыХранилищаКонфигураций</enums>
   <reports>Report.СкоростьКонвертации</reports>
   <dataProcessors>DataProcessor.РегламентныеИФоновыеЗадания</dataProcessors>
+  <dataProcessors>DataProcessor.Настройки</dataProcessors>
   <informationRegisters>InformationRegister.ИнформацияПользователей</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияВерсий</informationRegisters>
+  <informationRegisters>InformationRegister.СостоянияХранилищ</informationRegisters>
 </mdclass:Configuration>

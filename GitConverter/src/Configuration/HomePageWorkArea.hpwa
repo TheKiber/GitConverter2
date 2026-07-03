@@ -8,5 +8,12 @@
         <common>true</common>
       </visibility>
     </items>
+    <items>
+      <form>Catalog.ВерсииХранилища.Form.ФормаСписка</form>
+      <height>15</height>
+      <visibility>
+        <common>true</common>
+      </visibility>
+    </items>
   </columns>
 </hpwa:HomePageWorkArea>

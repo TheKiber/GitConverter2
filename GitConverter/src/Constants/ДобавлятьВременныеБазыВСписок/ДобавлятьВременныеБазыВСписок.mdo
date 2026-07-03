@@ -13,7 +13,10 @@
   <type>
     <types>Boolean</types>
   </type>
-  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Если включен, то за счет добавления временных баз в список ускоряются операции с базами. Позже сборщик мусора удаляет базы из списка и очищает их кэши. Если выключен, то базы не добавляются в список и не возникает необходимости чистить списки и кэши.</value>
+  </toolTip>
   <minValue xsi:type="core:UndefinedValue"/>
   <maxValue xsi:type="core:UndefinedValue"/>
   <dataLockControlMode>Managed</dataLockControlMode>

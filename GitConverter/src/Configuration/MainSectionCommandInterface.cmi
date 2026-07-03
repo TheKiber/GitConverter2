@@ -2,10 +2,6 @@
 <cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
   <commandsVisibility>
     <visibilityFragments>
-      <command>Catalog.ВерсииХранилища.StandardCommand.OpenList</command>
-      <visible/>
-    </visibilityFragments>
-    <visibilityFragments>
       <command>Catalog.КопииХранилищКонфигурации.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
@@ -14,12 +10,43 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>Catalog.ХранилищаКонфигураций.StandardCommand.OpenList</command>
+      <command>InformationRegister.СостоянияХранилищ.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>DataProcessor.РегламентныеИФоновыеЗадания.StandardCommand.Open</command>
+      <command>0:3ca509cd-61ca-4207-a699-369db1a05793</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.ОчередиВыполнения.Command.НастойкаОбщихОчередей</command>
       <visible/>
     </visibilityFragments>
   </commandsVisibility>
+  <commandsPlacement>
+    <placementFragments>
+      <group>ActionsPanelTools</group>
+      <commands>Catalog.ОчередиВыполнения.Command.НастойкаОбщихОчередей</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.ХранилищаКонфигураций.StandardCommand.OpenList</commands>
+      <commands>Catalog.КопииХранилищКонфигурации.StandardCommand.OpenList</commands>
+      <commands>Catalog.ВерсииEDT.StandardCommand.OpenList</commands>
+      <commands>Catalog.ВерсииХранилища.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ИнформацияПользователей.StandardCommand.OpenList</commands>
+      <commands>Catalog.ОчередиВыполнения.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СостоянияВерсий.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СостоянияХранилищ.StandardCommand.OpenList</commands>
+      <commands>DataProcessor.РегламентныеИФоновыеЗадания.Command.РегламентныеИФоновыеЗадания</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelTools</group>
+      <commands>InformationRegister.ИнформацияПользователей.Command.ИменаПользователей</commands>
+      <commands>DataProcessor.Настройки.Command.Настройки</commands>
+      <commands>0:3ca509cd-61ca-4207-a699-369db1a05793</commands>
+      <commands>Catalog.ОчередиВыполнения.Command.НастойкаОбщихОчередей</commands>
+    </orderFragments>
+  </commandsOrder>
 </cmi:CommandInterface>

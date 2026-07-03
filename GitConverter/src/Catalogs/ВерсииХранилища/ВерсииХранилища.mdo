@@ -125,6 +125,7 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ВерсииХранилища.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ВерсииХранилища.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВерсииХранилища.Form.ФормаСписка</defaultChoiceForm>
   <attributes uuid="465e7a07-5e58-4aa1-8693-d3d7bc207b5e">
     <name>Автор</name>
     <synonym>
@@ -196,10 +197,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="da028494-9fda-4b74-a5d6-292e3d1d9c95">
-    <name>ДатаНачалаОбработкиСостояния</name>
+    <name>ДатаНачалаОбработки</name>
     <synonym>
       <key>ru</key>
-      <value>Дата начала обработки состояния</value>
+      <value>Дата начала обработки</value>
     </synonym>
     <type>
       <types>Date</types>

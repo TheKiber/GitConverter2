@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ca509cd-61ca-4207-a699-369db1a05793">
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ca509cd-61ca-4207-a699-369db1a05793">
   <producedTypes>
     <objectType typeId="e880f21f-2af6-4f89-95be-533f086ff763" valueTypeId="308ebf65-c94d-41b7-bc35-852730c03314"/>
     <managerType typeId="afb15610-bc98-4778-864f-1faee74d63fd" valueTypeId="94717f3b-2d34-453a-aa5c-11ce9d958e3e"/>
@@ -9,7 +9,6 @@
     <key>ru</key>
     <value>Регламентные и фоновые задания</value>
   </synonym>
-  <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.РегламентныеИФоновыеЗадания.Form.РегламентныеИФоновыеЗадания</defaultForm>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
@@ -61,6 +60,9 @@
       <value>Регламентные и фоновые задания</value>
     </synonym>
     <group>NavigationPanelOrdinary</group>
-    <representation>Auto</representation>
+    <representation>Picture</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.ScheduledJob</picture>
+    </picture>
   </commands>
 </mdclass:DataProcessor>

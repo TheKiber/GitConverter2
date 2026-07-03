@@ -8,12 +8,15 @@
   <name>КонвертацияОстановлена</name>
   <synonym>
     <key>ru</key>
-    <value>Запуск фоновых заданий запрещен</value>
+    <value>Конвертация остановлена</value>
   </synonym>
   <type>
     <types>Boolean</types>
   </type>
-  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Если включен, то не запускаются никакие новые процессы конвертации (отчет по хранилищам, получение cf, сборщик мусора и т.п.). Существующие процессы по версиям и хранилищам дойдут до завершения, но новые не запустятся.</value>
+  </toolTip>
   <minValue xsi:type="core:UndefinedValue"/>
   <maxValue xsi:type="core:UndefinedValue"/>
   <dataLockControlMode>Managed</dataLockControlMode>

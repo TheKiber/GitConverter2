@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a50dfbee-674c-4e18-9435-52396a7333ce">
+  <name>КартинкаЗапуститьВсе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Картинка запустить все</value>
+  </synonym>
+</mdclass:CommonPicture>
