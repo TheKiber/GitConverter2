@@ -1641,7 +1641,33 @@
   </formCommands>
   <commandInterface>
     <navigationPanel/>
-    <commandBar/>
+    <commandBar>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.СброситьСостояние</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>4</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеВыгруженаВXML</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>1</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеПолученCF</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>0</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеПомещенаВGit</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>3</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеЗагруженаВEDT</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>2</index>
+      </cmiFragmentRecord>
+    </commandBar>
   </commandInterface>
   <extInfo xsi:type="form:CatalogFormExtInfo">
     <handlers>

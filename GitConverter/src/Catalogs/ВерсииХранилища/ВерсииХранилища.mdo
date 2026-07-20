@@ -478,4 +478,83 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <commands uuid="66b89a03-0bac-42ea-ba58-68655ef4f9a6">
+    <name>УстановитьСостояниеПолученCF</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установить состояние &quot;Получен CF&quot;</value>
+    </synonym>
+    <group>CommandGroup.УстановитьСостояние</group>
+    <commandParameterType>
+      <types>CatalogRef.ВерсииХранилища</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <onMainServerUnavalableBehavior>MakeDisable</onMainServerUnavalableBehavior>
+  </commands>
+  <commands uuid="b66a83b5-39ff-4bfc-a593-18e0b879d868">
+    <name>УстановитьСостояниеВыгруженаВXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установить состояние &quot;Выгружена в XML&quot;</value>
+    </synonym>
+    <group>CommandGroup.УстановитьСостояние</group>
+    <commandParameterType>
+      <types>CatalogRef.ВерсииХранилища</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <onMainServerUnavalableBehavior>MakeDisable</onMainServerUnavalableBehavior>
+  </commands>
+  <commands uuid="677a60b6-2cee-4e5a-9c44-843cb51032ad">
+    <name>УстановитьСостояниеЗагруженаВEDT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установить состояние &quot;Загружена в EDT&quot;</value>
+    </synonym>
+    <group>CommandGroup.УстановитьСостояние</group>
+    <commandParameterType>
+      <types>CatalogRef.ВерсииХранилища</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <onMainServerUnavalableBehavior>MakeDisable</onMainServerUnavalableBehavior>
+  </commands>
+  <commands uuid="96f9bb32-eae6-4fee-bbb6-0d730eb45d5c">
+    <name>УстановитьСостояниеПомещенаВGit</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установить состояние &quot;Помещена в Git&quot;</value>
+    </synonym>
+    <group>CommandGroup.УстановитьСостояние</group>
+    <commandParameterType>
+      <types>CatalogRef.ВерсииХранилища</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Установить состояние &quot;Помещена в Git&quot;</value>
+    </toolTip>
+    <onMainServerUnavalableBehavior>MakeDisable</onMainServerUnavalableBehavior>
+  </commands>
+  <commands uuid="2eda9a33-eef1-4472-9b5b-5bc2a97ee351">
+    <name>СброситьСостояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сбросить состояние и включить полную выгрузку</value>
+    </synonym>
+    <group>CommandGroup.УстановитьСостояние</group>
+    <commandParameterType>
+      <types>CatalogRef.ВерсииХранилища</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <onMainServerUnavalableBehavior>MakeDisable</onMainServerUnavalableBehavior>
+  </commands>
 </mdclass:Catalog>

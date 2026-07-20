@@ -96,7 +96,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВерсияПлатформыВыгрузки</name>
+      <name>ВерсияПлатформы</name>
       <id>4</id>
       <title>
         <key>ru</key>
@@ -108,14 +108,14 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВерсияПлатформыВыгрузки</segments>
+        <segments>Объект.ВерсияПлатформы</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
         <name>ВерсияПлатформыВыгрузкиПриИзменении</name>
       </handlers>
       <extendedTooltip>
-        <name>ВерсияПлатформыВыгрузкиРасширеннаяПодсказка</name>
+        <name>ВерсияПлатформыРасширеннаяПодсказка</name>
         <id>6</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -125,7 +125,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВерсияПлатформыВыгрузкиКонтекстноеМеню</name>
+        <name>ВерсияПлатформыКонтекстноеМеню</name>
         <id>5</id>
         <autoFill>true</autoFill>
       </contextMenu>
@@ -1225,62 +1225,6 @@
   <items xsi:type="form:FormGroup">
     <name>GitГруппа</name>
     <id>223</id>
-    <items xsi:type="form:FormField">
-      <name>ВариантGit</name>
-      <id>283</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>ВариантGit</segments>
-      </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>ВариантGitПриИзменении</name>
-      </handlers>
-      <extendedTooltip>
-        <name>ВариантGitРасширеннаяПодсказка</name>
-        <id>285</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ВариантGitКонтекстноеМеню</name>
-        <id>284</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>RadioButtonField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
-        <choiceList>
-          <presentation>
-            <key>ru</key>
-            <value>Сервере</value>
-          </presentation>
-          <value xsi:type="core:StringValue">
-            <value>Сервер</value>
-          </value>
-        </choiceList>
-        <choiceList>
-          <presentation>
-            <key>ru</key>
-            <value>Локальном диске</value>
-          </presentation>
-          <value xsi:type="core:StringValue">
-            <value>Локально</value>
-          </value>
-        </choiceList>
-      </extInfo>
-    </items>
     <items xsi:type="form:FormGroup">
       <name>Группа9</name>
       <id>68</id>
@@ -1324,8 +1268,7 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
-          <autoChoiceIncomplete>true</autoChoiceIncomplete>
-          <autoMarkIncomplete>true</autoMarkIncomplete>
+          <clearButton>true</clearButton>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -1338,6 +1281,10 @@
       <items xsi:type="form:Button">
         <name>УстановитьАдресРепозиторияGit</name>
         <id>78</id>
+        <title>
+          <key>ru</key>
+          <value>Установить адрес</value>
+        </title>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -1353,20 +1300,22 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>UsualButton</type>
+        <type>Hyperlink</type>
         <commandName>Form.Command.УстановитьАдресРепозиторияGit</commandName>
-        <representation>Picture</representation>
-        <width>4</width>
+        <representation>PictureAndText</representation>
+        <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <groupVerticalAlign>Center</groupVerticalAlign>
         <placementArea>UserCmds</placementArea>
         <toolTipRepresentation>Balloon</toolTipRepresentation>
+        <representationInContextMenu>Auto</representationInContextMenu>
       </items>
       <items xsi:type="form:Button">
         <name>ПроверитьДоступКРепозиториюGit</name>
         <id>209</id>
         <title>
           <key>ru</key>
-          <value>Проверить доступ...</value>
+          <value>Проверить доступ</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1383,11 +1332,12 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>UsualButton</type>
+        <type>Hyperlink</type>
         <commandName>Form.Command.ПроверитьДоступКРепозиториюGit</commandName>
         <representation>PictureAndText</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <groupVerticalAlign>Center</groupVerticalAlign>
         <placementArea>UserCmds</placementArea>
         <toolTipRepresentation>Balloon</toolTipRepresentation>
         <representationInContextMenu>Auto</representationInContextMenu>
@@ -1416,14 +1366,14 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>Группа10</name>
+      <name>РепозиторийПользовательПарольГруппа</name>
       <id>70</id>
       <items xsi:type="form:FormField">
         <name>ПользовательСервераGit</name>
         <id>72</id>
         <title>
           <key>ru</key>
-          <value>Пользователь</value>
+          <value>Пользователь Git</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1458,7 +1408,7 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
-          <autoMaxWidth>true</autoMaxWidth>
+          <maxWidth>20</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <chooseType>true</chooseType>
@@ -1466,7 +1416,7 @@
           <textEdit>true</textEdit>
           <inputHint>
             <key>ru</key>
-            <value>Пользователь доступа на сервер Git</value>
+            <value>Пользователь сервера Git</value>
           </inputHint>
         </extInfo>
       </items>
@@ -1510,16 +1460,12 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
-          <autoMaxWidth>true</autoMaxWidth>
+          <maxWidth>20</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
-          <inputHint>
-            <key>ru</key>
-            <value>Пароль доступа на сервер Git</value>
-          </inputHint>
         </extInfo>
       </items>
       <visible>true</visible>
@@ -1527,9 +1473,121 @@
       <userVisible>
         <common>true</common>
       </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Репозиторий пользователь пароль группа</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Репозиторий пользователь пароль группа</value>
+      </toolTip>
+      <toolTipRepresentation>ShowRight</toolTipRepresentation>
       <extendedTooltip>
-        <name>Группа10РасширеннаяПодсказка</name>
+        <name>РепозиторийПользовательПарольГруппаРасширеннаяПодсказка</name>
         <id>71</id>
+        <title>
+          <key>ru</key>
+          <value>Пользователь и пароль не обязательны если на сервере добавлены ssh ключи.</value>
+        </title>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>РекомендуетсяПроверитьGitГруппа</name>
+      <id>370</id>
+      <items xsi:type="form:Decoration">
+        <name>Декорация2</name>
+        <id>372</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>Декорация2РасширеннаяПодсказка</name>
+          <id>374</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>Декорация2КонтекстноеМеню</name>
+          <id>373</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:PictureDecorationExtInfo">
+          <picture xsi:type="core:PictureRef">
+            <picture>StdPicture.Information</picture>
+          </picture>
+          <fileDragMode>AsFileRef</fileDragMode>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>Декорация3</name>
+        <id>375</id>
+        <title>
+          <key>ru</key>
+          <value>Рекомендуется проверить доступ и выбрать ветку репозитория</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>Декорация3РасширеннаяПодсказка</name>
+          <id>377</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>Декорация3КонтекстноеМеню</name>
+          <id>376</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Рекомендуется проверить git группа</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Рекомендуется проверить git группа</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>РекомендуетсяПроверитьGitГруппаРасширеннаяПодсказка</name>
+        <id>371</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -1539,6 +1597,113 @@
       </extendedTooltip>
       <type>UsualGroup</type>
       <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <backColor xsi:type="core:ColorRef">
+          <color>Style.ЦветФонаСлабогоПредупреждения</color>
+        </backColor>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>Группа12</name>
+      <id>211</id>
+      <items xsi:type="form:FormField">
+        <name>ИмяВетки</name>
+        <id>107</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ИмяВетки</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>В Git репозитории основную (главную) ветку принято называть master. Если репозиторий публикуется на сервере (синхронизируется с сервером) запросите список веток, созданных в репозитории, по кнопке &lt;-. Если необходимая ветка отсутствует на сервере или репозиторий пуст - укажите имя ветки которая будет создана.</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ИмяВеткиРасширеннаяПодсказка1</name>
+          <id>109</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ИмяВеткиКонтекстноеМеню1</name>
+          <id>108</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <inputHint>
+            <key>ru</key>
+            <value>Имя существующей или новой ветки репозитория Git</value>
+          </inputHint>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ВыбратьВетку</name>
+        <id>215</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ВыбратьВеткуРасширеннаяПодсказка</name>
+          <id>216</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.ВыбратьВетку</commandName>
+        <representation>PictureAndText</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <toolTipRepresentation>Balloon</toolTipRepresentation>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>Группа12РасширеннаяПодсказка</name>
+        <id>212</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>AlwaysHorizontal</group>
         <showLeftMargin>true</showLeftMargin>
         <united>true</united>
         <throughAlign>Auto</throughAlign>
@@ -1592,17 +1757,119 @@
           <textEdit>true</textEdit>
         </extInfo>
       </items>
-      <items xsi:type="form:Button">
-        <name>СоздатьРепозиторийGit</name>
-        <id>40</id>
+      <items xsi:type="form:FormGroup">
+        <name>Группа10</name>
+        <id>382</id>
+        <items xsi:type="form:Button">
+          <name>СоздатьКлонироватьРепозиторийGit</name>
+          <id>40</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СоздатьКлонироватьРепозиторийGitРасширеннаяПодсказка</name>
+            <id>41</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.СоздатьКлонироватьРепозиторийGit</commandName>
+          <representation>PictureAndText</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Группа17</name>
+          <id>384</id>
+          <items xsi:type="form:Button">
+            <name>ОптимизироватьРепозиторийGit</name>
+            <id>380</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ОптимизироватьРепозиторийGitРасширеннаяПодсказка</name>
+              <id>381</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>CommandBarHyperlink</type>
+            <commandName>Form.Command.ОптимизироватьРепозиторийGit</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>ПересоздатьЛокальныйРепозиторийGit</name>
+            <id>386</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ПересоздатьЛокальныйРепозиторийGitРасширеннаяПодсказка</name>
+              <id>387</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.ПересоздатьЛокальныйРепозиторийGit</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>...</value>
+          </title>
+          <extendedTooltip>
+            <name>Группа17РасширеннаяПодсказка</name>
+            <id>385</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Popup</type>
+          <extInfo xsi:type="form:PopupGroupExtInfo">
+            <representation>Auto</representation>
+          </extInfo>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>СоздатьРепозиторийGitРасширеннаяПодсказка</name>
-          <id>41</id>
+          <name>Группа10РасширеннаяПодсказка</name>
+          <id>383</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1610,12 +1877,10 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>UsualButton</type>
-        <commandName>Form.Command.СоздатьРепозиторийGit</commandName>
-        <representation>PictureAndText</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
+        <type>CommandBar</type>
+        <extInfo xsi:type="form:CommandBarExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -1634,119 +1899,6 @@
       </extendedTooltip>
       <type>UsualGroup</type>
       <extInfo xsi:type="form:UsualGroupExtInfo">
-        <showLeftMargin>true</showLeftMargin>
-        <united>true</united>
-        <throughAlign>Auto</throughAlign>
-        <currentRowUse>Auto</currentRowUse>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormGroup">
-      <name>Группа12</name>
-      <id>211</id>
-      <items xsi:type="form:FormField">
-        <name>ИмяВетки</name>
-        <id>107</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ИмяВетки</segments>
-        </dataPath>
-        <shortcut>Ctrl+S</shortcut>
-        <toolTip>
-          <key>ru</key>
-          <value>В Git репозитории основную (главную) ветку принято называть master. Если репозиторий публикуется на сервере (синхронизируется с сервером) запросите список веток, созданных в репозитории, по кнопке &lt;-. Если необходимая ветка отсутствует на сервере или репозиторий пуст - укажите имя ветки которая будет создана.</value>
-        </toolTip>
-        <extendedTooltip>
-          <name>ИмяВеткиРасширеннаяПодсказка1</name>
-          <id>109</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>ИмяВеткиКонтекстноеМеню1</name>
-          <id>108</id>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>InputField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:InputFieldExtInfo">
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <wrap>true</wrap>
-          <dropListButton>true</dropListButton>
-          <chooseType>true</chooseType>
-          <typeDomainEnabled>true</typeDomainEnabled>
-          <textEdit>true</textEdit>
-          <choiceList>
-            <presentation>
-              <key>ru</key>
-              <value>master (?)</value>
-            </presentation>
-            <value xsi:type="core:StringValue">
-              <value>master</value>
-            </value>
-          </choiceList>
-          <inputHint>
-            <key>ru</key>
-            <value>Загрузите ветки с сервера или создайте новую...</value>
-          </inputHint>
-        </extInfo>
-      </items>
-      <items xsi:type="form:Button">
-        <name>ЗагрузитьСписокВеток</name>
-        <id>215</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ЗагрузитьСписокВетокРасширеннаяПодсказка</name>
-          <id>216</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <type>UsualButton</type>
-        <commandName>Form.Command.ЗагрузитьСписокВеток</commandName>
-        <representation>Picture</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <toolTipRepresentation>Balloon</toolTipRepresentation>
-        <representationInContextMenu>Auto</representationInContextMenu>
-      </items>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>Группа12РасширеннаяПодсказка</name>
-        <id>212</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <type>UsualGroup</type>
-      <extInfo xsi:type="form:UsualGroupExtInfo">
-        <group>AlwaysHorizontal</group>
         <showLeftMargin>true</showLeftMargin>
         <united>true</united>
         <throughAlign>Auto</throughAlign>
@@ -3358,6 +3510,31 @@
       <name>ФормаГруппа1</name>
       <id>325</id>
       <items xsi:type="form:Button">
+        <name>ФормаПеречитать</name>
+        <id>378</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ФормаПеречитатьРасширеннаяПодсказка</name>
+          <id>379</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Reread</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
         <name>ФормаОбновитьСостояние</name>
         <id>35</id>
         <visible>true</visible>
@@ -3423,30 +3600,6 @@
       <extInfo xsi:type="form:ButtonGroupExtInfo">
         <representation>Compact</representation>
       </extInfo>
-    </items>
-    <items xsi:type="form:Button">
-      <name>ФормаСоздатьРепозиторийGit</name>
-      <id>38</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ФормаСоздатьРепозиторийGitРасширеннаяПодсказка1</name>
-        <id>39</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <commandName>Form.Command.СоздатьРепозиторийGit</commandName>
-      <representation>Auto</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
     </items>
     <items xsi:type="form:Button">
       <name>ФормаЗагрузитьВерсииИзОтчетаПоХранилищу</name>
@@ -3752,25 +3905,6 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ВариантGit</name>
-    <title>
-      <key>ru</key>
-      <value>Репозиторий git на</value>
-    </title>
-    <id>20</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <savedData>true</savedData>
-  </attributes>
-  <attributes>
     <name>ОграничитьДиапазонВерсий</name>
     <title>
       <key>ru</key>
@@ -3894,6 +4028,7 @@
       </handler>
     </action>
     <representation>TextPicture</representation>
+    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -3915,13 +4050,14 @@
       </handler>
     </action>
     <representation>TextPicture</representation>
+    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>СоздатьРепозиторийGit</name>
+    <name>СоздатьКлонироватьРепозиторийGit</name>
     <title>
       <key>ru</key>
-      <value>Создать репозиторий Git</value>
+      <value>Создать / клонировать репозиторий Git</value>
     </title>
     <id>4</id>
     <toolTip>
@@ -3932,13 +4068,14 @@
       <common>true</common>
     </use>
     <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.CreateInitialImage</picture>
+      <picture>StdPicture.CreateListItem</picture>
     </picture>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>СоздатьРепозиторийGit</name>
+        <name>СоздатьКлонироватьРепозиторийGit</name>
       </handler>
     </action>
+    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -4002,13 +4139,14 @@
     </use>
     <shortcut>Ctrl+S</shortcut>
     <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.DataCompositionNewGroup</picture>
+      <picture>StdPicture.Write</picture>
     </picture>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>УстановитьАдресРепозиторияGit</name>
       </handler>
     </action>
+    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -4036,25 +4174,25 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>ЗагрузитьСписокВеток</name>
+    <name>ВыбратьВетку</name>
     <title>
       <key>ru</key>
-      <value>Загрузить список веток</value>
+      <value>Выбрать ветку</value>
     </title>
     <id>11</id>
     <toolTip>
       <key>ru</key>
-      <value>Загрузить список веток сервера</value>
+      <value>Загрузить список веток сервера и выбрать ветку</value>
     </toolTip>
     <use>
       <common>true</common>
     </use>
     <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.MoveLeft</picture>
+      <picture>StdPicture.ChooseValue</picture>
     </picture>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>ЗагрузитьСписокВеток</name>
+        <name>ВыбратьВетку</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
@@ -4076,6 +4214,56 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОбновитьСтатистику</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОптимизироватьРепозиторийGit</name>
+    <title>
+      <key>ru</key>
+      <value>Оптимизировать (сжать, очистить от мусора)</value>
+    </title>
+    <id>9</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Оптимизировать репозиторий git</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ЗеленыйЛист</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОптимизироватьРепозиторийGit</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <modifiesStoredData>true</modifiesStoredData>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ПересоздатьЛокальныйРепозиторийGit</name>
+    <title>
+      <key>ru</key>
+      <value>Пересоздать локальный репозиторий git</value>
+    </title>
+    <id>12</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Пересоздать локальный репозиторий git</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.DeleteDirectly</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>СоздатьКлонироватьРепозиторийGit</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

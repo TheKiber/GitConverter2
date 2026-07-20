@@ -887,131 +887,6 @@
         <items xsi:type="form:FormGroup">
           <name>УстановитьСостояние</name>
           <id>96</id>
-          <items xsi:type="form:Button">
-            <name>СписокУстановитьСостояниеПолученCF</name>
-            <id>98</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>СписокУстановитьСостояниеПолученCFРасширеннаяПодсказка</name>
-              <id>99</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <commandName>Form.Command.УстановитьСостояниеПолученCF</commandName>
-            <representation>Auto</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-          </items>
-          <items xsi:type="form:Button">
-            <name>СписокУстановитьСостояниеВыгруженаXML</name>
-            <id>100</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>СписокУстановитьСостояниеВыгруженаXMLРасширеннаяПодсказка</name>
-              <id>101</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <commandName>Form.Command.УстановитьСостояниеВыгруженаВXML</commandName>
-            <representation>Auto</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-          </items>
-          <items xsi:type="form:Button">
-            <name>СписокУстановитьСостояниеЗагруженаEDT</name>
-            <id>102</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>СписокУстановитьСостояниеЗагруженаEDTРасширеннаяПодсказка</name>
-              <id>103</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <commandName>Form.Command.УстановитьСостояниеЗагруженаВEDT</commandName>
-            <representation>Auto</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-          </items>
-          <items xsi:type="form:Button">
-            <name>СписокУстановитьСостояниеПомещенаGit</name>
-            <id>104</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>СписокУстановитьСостояниеПомещенаGitРасширеннаяПодсказка</name>
-              <id>105</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <commandName>Form.Command.УстановитьСостояниеПомещенаВGit</commandName>
-            <representation>Auto</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-          </items>
-          <items xsi:type="form:Button">
-            <name>СписокСброситьСостояние</name>
-            <id>106</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>СписокСброситьСостояниеРасширеннаяПодсказка</name>
-              <id>107</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <commandName>Form.Command.СброситьСостояние</commandName>
-            <representation>Auto</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1035,9 +910,8 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <type>Popup</type>
-          <extInfo xsi:type="form:PopupGroupExtInfo">
-            <representation>Auto</representation>
+          <extInfo xsi:type="form:ButtonGroupExtInfo">
+            <commandSource>FormCommandPanelGlobalCommands</commandSource>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -1202,126 +1076,6 @@
       <contextMenu>
         <name>СписокКонтекстноеМеню</name>
         <id>4</id>
-        <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюУстановитьСостояниеПолученCF</name>
-          <id>83</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>СписокКонтекстноеМенюУстановитьСостояниеПолученCFРасширеннаяПодсказка</name>
-            <id>84</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <commandName>Form.Command.УстановитьСостояниеПолученCF</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-        </items>
-        <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюУстановитьСостояниеВыгруженаВXML</name>
-          <id>85</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>СписокКонтекстноеМенюУстановитьСостояниеВыгруженаВXMLРасширеннаяПодсказка</name>
-            <id>86</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <commandName>Form.Command.УстановитьСостояниеВыгруженаВXML</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-        </items>
-        <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюУстановитьСостояниеЗагруженаВEDT</name>
-          <id>81</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>СписокКонтекстноеМенюУстановитьСостояниеЗагруженаВEDTРасширеннаяПодсказка</name>
-            <id>82</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <commandName>Form.Command.УстановитьСостояниеЗагруженаВEDT</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-        </items>
-        <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюУстановитьСостояниеПомещенаВGit</name>
-          <id>89</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>СписокКонтекстноеМенюУстановитьСостояниеПомещенаВGitРасширеннаяПодсказка</name>
-            <id>90</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <commandName>Form.Command.УстановитьСостояниеПомещенаВGit</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-        </items>
-        <items xsi:type="form:Button">
-          <name>СписокКонтекстноеМенюСброситьСостояние</name>
-          <id>87</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>СписокКонтекстноеМенюСброситьСостояниеРасширеннаяПодсказка</name>
-            <id>88</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <commandName>Form.Command.СброситьСостояние</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-        </items>
         <autoFill>true</autoFill>
       </contextMenu>
       <changeRowSet>true</changeRowSet>
@@ -1345,6 +1099,9 @@
       <horizontalStretch>true</horizontalStretch>
       <verticalStretch>true</verticalStretch>
       <enableStartDrag>true</enableStartDrag>
+      <rowPictureDataPath xsi:type="form:DataPath">
+        <segments>Список.DefaultPicture</segments>
+      </rowPictureDataPath>
       <extInfo xsi:type="form:DynamicListTableExtInfo">
         <autoRefresh>true</autoRefresh>
         <autoRefreshPeriod>60</autoRefreshPeriod>
@@ -1958,95 +1715,6 @@
     </edit>
   </attributes>
   <formCommands>
-    <name>УстановитьСостояниеВыгруженаВXML</name>
-    <title>
-      <key>ru</key>
-      <value>Установить состояние &quot;Выгружена в XML&quot;</value>
-    </title>
-    <id>1</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьСостояниеВыгруженаВXML</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьСостояниеПолученCF</name>
-    <title>
-      <key>ru</key>
-      <value>Установить состояние &quot;Получен CF&quot;</value>
-    </title>
-    <id>2</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьСостояниеПолученCF</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьСостояниеЗагруженаВEDT</name>
-    <title>
-      <key>ru</key>
-      <value>Установить состояние &quot;Загружена в EDT&quot;</value>
-    </title>
-    <id>3</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьСостояниеЗагруженаВEDT</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>СброситьСостояние</name>
-    <title>
-      <key>ru</key>
-      <value>Сбросить состояние и включить полную выгрузку</value>
-    </title>
-    <id>4</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Сбросить состояние</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>СброситьСостояние</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьСостояниеПомещенаВGit</name>
-    <title>
-      <key>ru</key>
-      <value>Установить состояние &quot;Помещена в Git&quot;</value>
-    </title>
-    <id>5</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьСостояниеПомещенаВGit</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
     <name>ПометитьВсеНаУдаление</name>
     <title>
       <key>ru</key>
@@ -2072,7 +1740,33 @@
   </formCommands>
   <commandInterface>
     <navigationPanel/>
-    <commandBar/>
+    <commandBar>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.СброситьСостояние</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>4</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеВыгруженаВXML</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>1</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеЗагруженаВEDT</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>2</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеПолученCF</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>0</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеПомещенаВGit</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>3</index>
+      </cmiFragmentRecord>
+    </commandBar>
   </commandInterface>
   <extInfo xsi:type="form:DynamicListFormExtInfo"/>
 </form:Form>

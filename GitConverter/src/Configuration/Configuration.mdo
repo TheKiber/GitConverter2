@@ -77,15 +77,18 @@
   <styleItems>StyleItem.ПоясняющийОшибкуТекст</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
+  <styleItems>StyleItem.ФонУправляющегоПоля</styleItems>
   <styleItems>StyleItem.ЦветФонаПредупреждения</styleItems>
   <styleItems>StyleItem.ЦветФонаСлабогоПредупреждения</styleItems>
   <styleItems>StyleItem.ЦветФонаУспех</styleItems>
   <commonPictures>CommonPicture.ВыполнитьРегламентноеЗаданиеВручную</commonPictures>
   <commonPictures>CommonPicture.ДлительнаяОперация48</commonPictures>
   <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <commonPictures>CommonPicture.ЗеленыйЛист</commonPictures>
   <commonPictures>CommonPicture.Информация32</commonPictures>
   <commonPictures>CommonPicture.КартинкаЗапуститьВсе</commonPictures>
   <commonPictures>CommonPicture.КартинкаОстановитьВсе</commonPictures>
+  <commonPictures>CommonPicture.ПиктограммыЭлементов</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВверх</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВлево</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВниз</commonPictures>
@@ -125,6 +128,7 @@
   <scheduledJobs>ScheduledJob.ОчисткаОтМусора</scheduledJobs>
   <functionalOptions>FunctionalOption.ДобавлятьВременныеБазыВСписок</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьНесколькоВерсийEDT</functionalOptions>
+  <commandGroups>CommandGroup.УстановитьСостояние</commandGroups>
   <constants>Constant.АрхивироватьОшибки</constants>
   <constants>Constant.ВерсияДанныхИБ</constants>
   <constants>Constant.ВерсияПлатформы</constants>

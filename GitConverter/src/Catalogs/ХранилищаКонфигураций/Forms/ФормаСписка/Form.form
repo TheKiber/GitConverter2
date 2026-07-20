@@ -47,7 +47,7 @@
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
-      <name>ИспользованиеЗадания</name>
+      <name>ИндексКартинки1</name>
       <id>35</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -55,11 +55,11 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.ИспользованиеЗадания</segments>
+        <segments>Список.ИндексКартинки1</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>
-        <name>ИспользованиеЗаданияРасширеннаяПодсказка</name>
+        <name>ИндексКартинки1РасширеннаяПодсказка</name>
         <id>37</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -69,11 +69,11 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ИспользованиеЗаданияКонтекстноеМеню</name>
+        <name>ИндексКартинки1КонтекстноеМеню</name>
         <id>36</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>CheckBoxField</type>
+      <type>PictureField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerPicture xsi:type="core:PictureRef">
@@ -81,7 +81,20 @@
       </headerPicture>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      <extInfo xsi:type="form:ImageFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <valuesPicture xsi:type="core:PictureRef">
+          <picture>CommonPicture.ПиктограммыЭлементов</picture>
+        </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
+        <fileDragMode>AsFileRef</fileDragMode>
+      </extInfo>
     </items>
     <items xsi:type="form:FormField">
       <name>Наименование</name>
@@ -125,80 +138,6 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ИмяПроектаEDT</name>
-      <id>74</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Список.ИмяПроектаEDT</segments>
-      </dataPath>
-      <extendedTooltip>
-        <name>ИмяПроектаEDTРасширеннаяПодсказка</name>
-        <id>76</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ИмяПроектаEDTКонтекстноеМеню</name>
-        <id>75</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>LabelField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
-        <width>17</width>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>ИмяВетки</name>
-      <id>68</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Список.ИмяВетки</segments>
-      </dataPath>
-      <extendedTooltip>
-        <name>ИмяВеткиРасширеннаяПодсказка</name>
-        <id>70</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ИмяВеткиКонтекстноеМеню</name>
-        <id>69</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>LabelField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
-        <width>17</width>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
       <name>Адрес</name>
       <id>16</id>
       <visible>true</visible>
@@ -233,6 +172,80 @@
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <horizontalStretch>true</horizontalStretch>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ИмяВетки</name>
+      <id>68</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ИмяВетки</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ИмяВеткиРасширеннаяПодсказка</name>
+        <id>70</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИмяВеткиКонтекстноеМеню</name>
+        <id>69</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>10</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ИмяПроектаEDT</name>
+      <id>74</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ИмяПроектаEDT</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ИмяПроектаEDTРасширеннаяПодсказка</name>
+        <id>76</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИмяПроектаEDTКонтекстноеМеню</name>
+        <id>75</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>10</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -1707,10 +1720,17 @@
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
 	ХранилищаКонфигураций.Ссылка КАК Ссылка,
+	ВЫБОР
+		КОГДА ХранилищаКонфигураций.ПометкаУдаления
+			ТОГДА 42
+		КОГДА ХранилищаКонфигураций.ИспользованиеЗадания
+			ТОГДА 43
+		ИНАЧЕ -1
+	КОНЕЦ КАК ИндексКартинки1,
 	ХранилищаКонфигураций.ПометкаУдаления КАК ПометкаУдаления,
 	ХранилищаКонфигураций.Наименование КАК Наименование,
 	ХранилищаКонфигураций.Адрес КАК Адрес,
-	ХранилищаКонфигураций.ВерсияПлатформыВыгрузки КАК ВерсияПлатформыВыгрузки,
+	ХранилищаКонфигураций.ВерсияПлатформы КАК ВерсияПлатформы,
 	ХранилищаКонфигураций.ИдентификаторЗадания КАК ИдентификаторЗадания,
 	ХранилищаКонфигураций.КаталогВыгрузкиВерсий КАК КаталогВыгрузкиВерсий,
 	ХранилищаКонфигураций.ИмяПользователяХранилища КАК ИмяПользователяХранилища,
@@ -1800,10 +1820,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Адрес</dataPath>
         <field>Адрес</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ВерсияПлатформыВыгрузки</dataPath>
-        <field>ВерсияПлатформыВыгрузки</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИдентификаторЗадания</dataPath>
@@ -1948,6 +1964,22 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИмяПредопределенныхДанных</dataPath>
         <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияПлатформы</dataPath>
+        <field>ВерсияПлатформы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИндексКартинки1</dataPath>
+        <field>ИндексКартинки1</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Индекс картинки1</value>
+            </content>
+          </localValue>
+        </title>
       </fields>
     </extInfo>
   </attributes>
