@@ -543,7 +543,22 @@
     <onMainServerUnavalableBehavior>MakeDisable</onMainServerUnavalableBehavior>
   </commands>
   <commands uuid="2eda9a33-eef1-4472-9b5b-5bc2a97ee351">
-    <name>СброситьСостояние</name>
+    <name>СброситьСостояниеИОтключитьПолнуюВыгрузку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сбросить состояние и отключить полную выгрузку</value>
+    </synonym>
+    <group>CommandGroup.УстановитьСостояние</group>
+    <commandParameterType>
+      <types>CatalogRef.ВерсииХранилища</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <onMainServerUnavalableBehavior>MakeDisable</onMainServerUnavalableBehavior>
+  </commands>
+  <commands uuid="29ab8730-4add-4a0f-9084-c8a0af263815">
+    <name>СброситьСостояниеИВключитьПолнуюВыгрузку</name>
     <synonym>
       <key>ru</key>
       <value>Сбросить состояние и включить полную выгрузку</value>

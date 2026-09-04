@@ -2,7 +2,7 @@
 <cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
   <commandsVisibility>
     <visibilityFragments>
-      <command>Catalog.КопииХранилищКонфигурации.StandardCommand.OpenList</command>
+      <command>InformationRegister.ИнформацияПользователей.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
@@ -11,10 +11,6 @@
     </visibilityFragments>
     <visibilityFragments>
       <command>InformationRegister.СостоянияХранилищ.StandardCommand.OpenList</command>
-      <visible/>
-    </visibilityFragments>
-    <visibilityFragments>
-      <command>0:3ca509cd-61ca-4207-a699-369db1a05793</command>
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
@@ -45,7 +41,6 @@
       <group>ActionsPanelTools</group>
       <commands>InformationRegister.ИнформацияПользователей.Command.ИменаПользователей</commands>
       <commands>DataProcessor.Настройки.Command.Настройки</commands>
-      <commands>0:3ca509cd-61ca-4207-a699-369db1a05793</commands>
       <commands>Catalog.ОчередиВыполнения.Command.НастойкаОбщихОчередей</commands>
     </orderFragments>
   </commandsOrder>

@@ -395,6 +395,42 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
+        <name>Источник</name>
+        <id>127</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Список.Источник</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ИсточникРасширеннаяПодсказка</name>
+          <id>129</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ИсточникКонтекстноеМеню</name>
+          <id>128</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
         <name>КоличествоМетаданных</name>
         <id>31</id>
         <visible>true</visible>
@@ -427,42 +463,6 @@
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:LabelFieldExtInfo">
           <width>10</width>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-        </extInfo>
-      </items>
-      <items xsi:type="form:FormField">
-        <name>Источник</name>
-        <id>127</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Список.Источник</segments>
-        </dataPath>
-        <extendedTooltip>
-          <name>ИсточникРасширеннаяПодсказка</name>
-          <id>129</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>ИсточникКонтекстноеМеню</name>
-          <id>128</id>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>LabelField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:LabelFieldExtInfo">
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
         </extInfo>
@@ -959,17 +959,75 @@
           </extendedTooltip>
           <extInfo xsi:type="form:ButtonGroupExtInfo"/>
         </items>
-        <items xsi:type="form:Button">
-          <name>ПометитьВсеНаУдаление</name>
-          <id>94</id>
+        <items xsi:type="form:FormGroup">
+          <name>УстановитьПометкиНаУдаление</name>
+          <id>153</id>
+          <items xsi:type="form:Button">
+            <name>ПометитьВсеНаУдаление</name>
+            <id>94</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ПометитьВсеНаУдалениеРасширеннаяПодсказка</name>
+              <id>95</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.ПометитьВсеНаУдаление</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>СнятьСоВсехПометкиНаУдаление</name>
+            <id>155</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>СнятьСоВсехПометкиНаУдалениеРасширеннаяПодсказка</name>
+              <id>156</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.СнятьСоВсехПометкиНаУдаление</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Установить пометки на удаление</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Установить пометки на удаление</value>
+          </toolTip>
           <extendedTooltip>
-            <name>ПометитьВсеНаУдалениеРасширеннаяПодсказка</name>
-            <id>95</id>
+            <name>УстановитьПометкиНаУдалениеРасширеннаяПодсказка</name>
+            <id>154</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -977,12 +1035,13 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <commandName>Form.Command.ПометитьВсеНаУдаление</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-          <representationInContextMenu>Auto</representationInContextMenu>
+          <type>Popup</type>
+          <extInfo xsi:type="form:PopupGroupExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>StdPicture.MarkToDelete</picture>
+            </picture>
+            <representation>Picture</representation>
+          </extInfo>
         </items>
         <horizontalAlign>Left</horizontalAlign>
         <autoFill>true</autoFill>
@@ -1738,11 +1797,32 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
+  <formCommands>
+    <name>СнятьСоВсехПометкиНаУдаление</name>
+    <title>
+      <key>ru</key>
+      <value>Снять со всех пометки на удаление</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Снять со всех пометки на удаление</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>СнятьСоВсехПометкиНаУдаление</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar>
       <cmiFragmentRecord>
-        <command>Catalog.ВерсииХранилища.Command.СброситьСостояние</command>
+        <command>Catalog.ВерсииХранилища.Command.СброситьСостояниеИОтключитьПолнуюВыгрузку</command>
         <group>CommandGroup.УстановитьСостояние</group>
         <index>4</index>
       </cmiFragmentRecord>
@@ -1765,6 +1845,11 @@
         <command>Catalog.ВерсииХранилища.Command.УстановитьСостояниеПомещенаВGit</command>
         <group>CommandGroup.УстановитьСостояние</group>
         <index>3</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ВерсииХранилища.Command.СброситьСостояниеИВключитьПолнуюВыгрузку</command>
+        <group>CommandGroup.УстановитьСостояние</group>
+        <index>5</index>
       </cmiFragmentRecord>
     </commandBar>
   </commandInterface>

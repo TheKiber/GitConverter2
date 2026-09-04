@@ -511,7 +511,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Количество коммитов за сеанс фонового процесса, если указано 0 - нет ограничений.</value>
+      <value>Количество коммитов за сеанс фонового процесса, если указано 0 - используется умолчание (10).</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -637,6 +637,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="a3ced7aa-315b-40f3-a44f-9a9538d2dbd7">
+    <name>ОчищатьНедостижимыеСсылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очищать недостижимые ссылки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При выгрузке в XML не выгружаются ссылки к недостижимым объектам, т. е. к таким объектам, которые были удалены в одной из предыдущих версий конфигурации (-ignoreUnresolvedReferences).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="a8780eea-09bc-48dd-9b57-96b98ce3ce90">
     <name>ПарольПользователяХранилища</name>
     <synonym>
@@ -730,7 +749,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Если указано, то новые версии запрашиваться не будут.</value>
+      <value>Если заполнена, то отключается заполнение списка коммитов из истории хранилища.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

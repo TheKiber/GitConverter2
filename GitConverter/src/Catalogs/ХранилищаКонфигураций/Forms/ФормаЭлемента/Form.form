@@ -980,6 +980,40 @@
       <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
     </items>
     <items xsi:type="form:FormField">
+      <name>ОчищатьНедостижимыеСсылки</name>
+      <id>388</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.ОчищатьНедостижимыеСсылки</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <extendedTooltip>
+        <name>ОчищатьНедостижимыеСсылкиРасширеннаяПодсказка</name>
+        <id>390</id>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОчищатьНедостижимыеСсылкиКонтекстноеМеню</name>
+        <id>389</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormField">
       <name>УдалятьКонфигурацииПоставщиков</name>
       <id>142</id>
       <visible>true</visible>
@@ -1411,6 +1445,7 @@
           <maxWidth>20</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <clearButton>true</clearButton>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -1463,6 +1498,7 @@
           <maxWidth>20</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <clearButton>true</clearButton>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -2556,6 +2592,111 @@
   <items xsi:type="form:FormGroup">
     <name>РезультатыГруппа</name>
     <id>308</id>
+    <items xsi:type="form:FormGroup">
+      <name>ОбновитьСостояниеГруппа</name>
+      <id>391</id>
+      <items xsi:type="form:Button">
+        <name>ФормаОбновитьСостояние</name>
+        <id>35</id>
+        <title>
+          <key>ru</key>
+          <value>Обновить</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ФормаОбновитьСостояниеРасширеннаяПодсказка</name>
+          <id>36</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.ОбновитьСостояние</commandName>
+        <representation>PictureAndText</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <groupVerticalAlign>Center</groupVerticalAlign>
+        <placementArea>UserCmds</placementArea>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ОбновлятьСостояниеАвтоматически</name>
+        <id>393</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ОбновлятьСостояниеАвтоматически</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ОбновлятьСостояниеАвтоматическиПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ОбновлятьСостояниеАвтоматическиРасширеннаяПодсказка</name>
+          <id>395</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ОбновлятьСостояниеАвтоматическиКонтекстноеМеню</name>
+          <id>394</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <groupVerticalAlign>Center</groupVerticalAlign>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Обновить состояние группа</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Обновить состояние группа</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ОбновитьСостояниеГруппаРасширеннаяПодсказка</name>
+        <id>392</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
     <items xsi:type="form:FormField">
       <name>ВерсияВGit</name>
       <id>16</id>
@@ -3058,7 +3199,7 @@
     <name>СтатистикаГруппа</name>
     <id>80</id>
     <items xsi:type="form:Button">
-      <name>ОбновитьСтатистику</name>
+      <name>ПолучитьСтатистику</name>
       <id>366</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -3066,7 +3207,7 @@
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ОбновитьСтатистикуРасширеннаяПодсказка</name>
+        <name>ПолучитьСтатистикуРасширеннаяПодсказка</name>
         <id>367</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -3076,7 +3217,7 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>Form.Command.ОбновитьСтатистику</commandName>
+      <commandName>Form.Command.ПолучитьСтатистику</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -3506,90 +3647,17 @@
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
     </items>
-    <items xsi:type="form:FormGroup">
-      <name>ФормаГруппа1</name>
-      <id>325</id>
-      <items xsi:type="form:Button">
-        <name>ФормаПеречитать</name>
-        <id>378</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ФормаПеречитатьРасширеннаяПодсказка</name>
-          <id>379</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <commandName>Form.StandardCommand.Reread</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
-      </items>
-      <items xsi:type="form:Button">
-        <name>ФормаОбновитьСостояние</name>
-        <id>35</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ФормаОбновитьСостояниеРасширеннаяПодсказка</name>
-          <id>36</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <commandName>Form.Command.ОбновитьСостояние</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-      </items>
-      <items xsi:type="form:Button">
-        <name>ОбновлятьСостояниеАвтоматически</name>
-        <id>42</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ОбновлятьСостояниеАвтоматическиРасширеннаяПодсказка</name>
-          <id>43</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <commandName>Form.Command.ОбновлятьСостояниеАвтоматически</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-      </items>
+    <items xsi:type="form:Button">
+      <name>ФормаПеречитать</name>
+      <id>378</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ФормаГруппа1РасширеннаяПодсказка</name>
-        <id>326</id>
+        <name>ФормаПеречитатьРасширеннаяПодсказка</name>
+        <id>379</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -3597,9 +3665,12 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <extInfo xsi:type="form:ButtonGroupExtInfo">
-        <representation>Compact</representation>
-      </extInfo>
+      <commandName>Form.StandardCommand.Reread</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:Button">
       <name>ФормаЗагрузитьВерсииИзОтчетаПоХранилищу</name>
@@ -3629,8 +3700,16 @@
     <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>ПриЗакрытии</name>
   </handlers>
   <handlers>
     <event>FillCheckProcessingAtServer</event>
@@ -3662,10 +3741,10 @@
     <savedData>true</savedData>
   </attributes>
   <attributes>
-    <name>АвтообновлениеСостоянияЗадания</name>
+    <name>ОбновлятьСостояниеАвтоматически</name>
     <title>
       <key>ru</key>
-      <value>Автообновление состояния задания</value>
+      <value>Обновлять каждые 10 сек</value>
     </title>
     <id>3</id>
     <valueType>
@@ -3678,7 +3757,7 @@
       <common>true</common>
     </edit>
     <settingsSavedData xsi:type="form:DataPath">
-      <segments>АвтообновлениеСостоянияЗадания</segments>
+      <segments>ОбновлятьСостояниеАвтоматически</segments>
     </settingsSavedData>
   </attributes>
   <attributes>
@@ -4028,7 +4107,6 @@
       </handler>
     </action>
     <representation>TextPicture</representation>
-    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -4076,27 +4154,6 @@
       </handler>
     </action>
     <modifiesStoredData>true</modifiesStoredData>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ОбновлятьСостояниеАвтоматически</name>
-    <title>
-      <key>ru</key>
-      <value>Обновлять каждые 10 сек</value>
-    </title>
-    <id>5</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Обновлять состояние автоматически</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОбновлятьСостояниеАвтоматически</name>
-      </handler>
-    </action>
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
@@ -4198,22 +4255,22 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>ОбновитьСтатистику</name>
+    <name>ПолучитьСтатистику</name>
     <title>
       <key>ru</key>
-      <value>Обновить статистику</value>
+      <value>Получить статистику</value>
     </title>
     <id>8</id>
     <toolTip>
       <key>ru</key>
-      <value>Обновить статистику</value>
+      <value>Получить статистику</value>
     </toolTip>
     <use>
       <common>true</common>
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>ОбновитьСтатистику</name>
+        <name>ПолучитьСтатистику</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
@@ -4222,7 +4279,7 @@
     <name>ОптимизироватьРепозиторийGit</name>
     <title>
       <key>ru</key>
-      <value>Оптимизировать (сжать, очистить от мусора)</value>
+      <value>Оптимизировать (сжать, очистить от мусора - может занять длительное время)</value>
     </title>
     <id>9</id>
     <toolTip>

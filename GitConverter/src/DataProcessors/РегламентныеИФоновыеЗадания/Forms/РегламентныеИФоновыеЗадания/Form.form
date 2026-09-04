@@ -3109,7 +3109,7 @@
     <use>
       <common>true</common>
     </use>
-    <shortcut>F5</shortcut>
+    <shortcut>Ctrl+S</shortcut>
     <picture xsi:type="core:PictureRef">
       <picture>StdPicture.Refresh</picture>
     </picture>
@@ -3271,6 +3271,7 @@
     <use>
       <common>true</common>
     </use>
+    <shortcut>F5</shortcut>
     <picture xsi:type="core:PictureRef">
       <picture>StdPicture.Refresh</picture>
     </picture>
