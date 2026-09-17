@@ -122,10 +122,10 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <editType>InDialog</editType>
-  <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ВерсииХранилища.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ВерсииХранилища.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.ВерсииХранилища.Form.ФормаСписка</defaultChoiceForm>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
   <attributes uuid="465e7a07-5e58-4aa1-8693-d3d7bc207b5e">
     <name>Автор</name>
     <synonym>

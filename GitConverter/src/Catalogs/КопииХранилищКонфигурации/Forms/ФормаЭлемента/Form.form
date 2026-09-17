@@ -757,7 +757,7 @@
     <name>РегламентноеЗаданиеИспользуется</name>
     <title>
       <key>ru</key>
-      <value>Выполнять по расписанию</value>
+      <value>Получать CF по расписанию</value>
     </title>
     <id>4</id>
     <valueType>

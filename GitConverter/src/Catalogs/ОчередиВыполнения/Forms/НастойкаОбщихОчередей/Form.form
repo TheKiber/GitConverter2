@@ -767,6 +767,109 @@
             <autoMaxHeight>true</autoMaxHeight>
           </extInfo>
         </items>
+        <items xsi:type="form:FormGroup">
+          <name>ИзмененияРегламентныхЗаданийГруппа5</name>
+          <id>74</id>
+          <items xsi:type="form:FormField">
+            <name>ИзмененияРегламентныхЗаданийНаименованиеБыло</name>
+            <id>76</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ИзмененияРегламентныхЗаданий.НаименованиеБыло</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>ИзмененияРегламентныхЗаданийНаименованиеБылоРасширеннаяПодсказка</name>
+              <id>78</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИзмененияРегламентныхЗаданийНаименованиеБылоКонтекстноеМеню</name>
+              <id>77</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>EnterOnInput</editMode>
+            <cellHyperlink>true</cellHyperlink>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <hyperlink>true</hyperlink>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ИзмененияРегламентныхЗаданийНаименованиеСтанет</name>
+            <id>79</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ИзмененияРегламентныхЗаданий.НаименованиеСтанет</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>ИзмененияРегламентныхЗаданийНаименованиеСтанетРасширеннаяПодсказка</name>
+              <id>81</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИзмененияРегламентныхЗаданийНаименованиеСтанетКонтекстноеМеню</name>
+              <id>80</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>EnterOnInput</editMode>
+            <cellHyperlink>true</cellHyperlink>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <hyperlink>true</hyperlink>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Наименование</value>
+          </title>
+          <extendedTooltip>
+            <name>ИзмененияРегламентныхЗаданийГруппа5РасширеннаяПодсказка</name>
+            <id>75</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+            <showInHeader>true</showInHeader>
+          </extInfo>
+        </items>
         <items xsi:type="form:FormField">
           <name>ИзмененияРегламентныхЗаданийЧтоИзменится</name>
           <id>39</id>
@@ -1125,109 +1228,6 @@
           <extendedTooltip>
             <name>ИзмененияРегламентныхЗаданийГруппа3РасширеннаяПодсказка</name>
             <id>65</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <type>ColumnGroup</type>
-          <extInfo xsi:type="form:ColumnGroupExtInfo">
-            <group>Vertical</group>
-            <showTitle>true</showTitle>
-            <showInHeader>true</showInHeader>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormGroup">
-          <name>ИзмененияРегламентныхЗаданийГруппа5</name>
-          <id>74</id>
-          <items xsi:type="form:FormField">
-            <name>ИзмененияРегламентныхЗаданийНаименованиеБыло</name>
-            <id>76</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ИзмененияРегламентныхЗаданий.НаименованиеБыло</segments>
-            </dataPath>
-            <extendedTooltip>
-              <name>ИзмененияРегламентныхЗаданийНаименованиеБылоРасширеннаяПодсказка</name>
-              <id>78</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ИзмененияРегламентныхЗаданийНаименованиеБылоКонтекстноеМеню</name>
-              <id>77</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>LabelField</type>
-            <editMode>EnterOnInput</editMode>
-            <cellHyperlink>true</cellHyperlink>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:LabelFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <hyperlink>true</hyperlink>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>ИзмененияРегламентныхЗаданийНаименованиеСтанет</name>
-            <id>79</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ИзмененияРегламентныхЗаданий.НаименованиеСтанет</segments>
-            </dataPath>
-            <extendedTooltip>
-              <name>ИзмененияРегламентныхЗаданийНаименованиеСтанетРасширеннаяПодсказка</name>
-              <id>81</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ИзмененияРегламентныхЗаданийНаименованиеСтанетКонтекстноеМеню</name>
-              <id>80</id>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>LabelField</type>
-            <editMode>EnterOnInput</editMode>
-            <cellHyperlink>true</cellHyperlink>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:LabelFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <hyperlink>true</hyperlink>
-            </extInfo>
-          </items>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <title>
-            <key>ru</key>
-            <value>Наименование</value>
-          </title>
-          <extendedTooltip>
-            <name>ИзмененияРегламентныхЗаданийГруппа5РасширеннаяПодсказка</name>
-            <id>75</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>

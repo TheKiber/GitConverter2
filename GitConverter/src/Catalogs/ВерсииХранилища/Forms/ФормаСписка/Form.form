@@ -315,20 +315,101 @@
           <autoMaxHeight>true</autoMaxHeight>
         </extInfo>
       </items>
-      <items xsi:type="form:FormField">
-        <name>Состояние</name>
-        <id>28</id>
+      <items xsi:type="form:FormGroup">
+        <name>Группа2</name>
+        <id>160</id>
+        <items xsi:type="form:FormField">
+          <name>ИндексКартинкиВозниклаОшибка</name>
+          <id>157</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Список.ИндексКартинкиВозниклаОшибка</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <extendedTooltip>
+            <name>ИндексКартинкиВозниклаОшибкаРасширеннаяПодсказка</name>
+            <id>159</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ИндексКартинкиВозниклаОшибкаКонтекстноеМеню</name>
+            <id>158</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>PictureField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:ImageFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>true</horizontalStretch>
+            <verticalStretch>true</verticalStretch>
+            <valuesPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Ошибка</picture>
+            </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>Состояние</name>
+          <id>28</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Список.Состояние</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>СостояниеРасширеннаяПодсказка</name>
+            <id>30</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СостояниеКонтекстноеМеню</name>
+            <id>29</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>LabelField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:LabelFieldExtInfo">
+            <width>16</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+          </extInfo>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Список.Состояние</segments>
-        </dataPath>
         <extendedTooltip>
-          <name>СостояниеРасширеннаяПодсказка</name>
-          <id>30</id>
+          <name>Группа2РасширеннаяПодсказка</name>
+          <id>161</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -336,25 +417,19 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <contextMenu>
-          <name>СостояниеКонтекстноеМеню</name>
-          <id>29</id>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>LabelField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:LabelFieldExtInfo">
-          <width>16</width>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
+        <type>ColumnGroup</type>
+        <extInfo xsi:type="form:ColumnGroupExtInfo">
+          <group>InCell</group>
+          <showTitle>true</showTitle>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
         <name>КоличествоОшибок</name>
         <id>133</id>
+        <title>
+          <key>ru</key>
+          <value>Ошибок</value>
+        </title>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -363,7 +438,6 @@
         <dataPath xsi:type="form:DataPath">
           <segments>Список.КоличествоОшибок</segments>
         </dataPath>
-        <titleLocation>None</titleLocation>
         <extendedTooltip>
           <name>КоличествоОшибокРасширеннаяПодсказка</name>
           <id>135</id>
@@ -382,9 +456,6 @@
         <type>LabelField</type>
         <editMode>Enter</editMode>
         <showInHeader>true</showInHeader>
-        <headerPicture xsi:type="core:PictureRef">
-          <picture>StdPicture.DialogExclamation</picture>
-        </headerPicture>
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:LabelFieldExtInfo">
@@ -433,6 +504,10 @@
       <items xsi:type="form:FormField">
         <name>КоличествоМетаданных</name>
         <id>31</id>
+        <title>
+          <key>ru</key>
+          <value>Метаданных</value>
+        </title>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -1576,6 +1651,11 @@
 	Шапка.ВерсияДанных КАК ВерсияДанных,
 	Шапка.ВерсияКонфигурации КАК ВерсияКонфигурации,
 	Шапка.ВозниклаОшибка КАК ВозниклаОшибка,
+	ВЫБОР
+		КОГДА Шапка.ВозниклаОшибка
+			ТОГДА 0
+		ИНАЧЕ -1
+	КОНЕЦ КАК ИндексКартинкиВозниклаОшибка,
 	Шапка.ДатаНачалаОбработки КАК ДатаНачалаОбработки,
 	Шапка.КоличествоОшибок КАК КоличествоОшибок,
 	Шапка.ТекстОшибки КАК ТекстОшибки,
@@ -1722,6 +1802,18 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ДатаНачалаОбработки</dataPath>
         <field>ДатаНачалаОбработки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИндексКартинкиВозниклаОшибка</dataPath>
+        <field>ИндексКартинкиВозниклаОшибка</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Индекс картинки возникла ошибка</value>
+            </content>
+          </localValue>
+        </title>
       </fields>
     </extInfo>
   </attributes>
